@@ -6,6 +6,10 @@ description: Plain-English explanation of Virginia SB 178 and HB 970 and the "pr
 
 # The Bills: SB 178 and HB 970
 
+## Official bill links (Virginia LIS)
+- SB 178: https://lis.virginia.gov/bill-details/20261/SB178
+- HB 970: https://lis.virginia.gov/bill-details/20261/HB970
+
 These bills are commonly described as **workforce expansion route B**. They would create/expand a **"preventive/preventative dental assistant"** role and authorize that role to perform **limited preventive cleanings** (often described publicly as **above-the-gumline scaling/polishing**) under dentist supervision.
 
 ## What supporters say

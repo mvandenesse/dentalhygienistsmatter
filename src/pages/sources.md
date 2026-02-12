@@ -22,7 +22,10 @@ We aim to keep claims on this site grounded in publicly available reporting.
 - Becker’s Dental Review (Feb 3, 2026): *Virginia dentists, hygienists spar over workforce legislation: 7 notes*
   - https://www.beckersdental.com/staffing-issues/virginia-dentists-hygienists-spar-over-workforce-legislation-7-notes/
 
-## Notes
-- Legislative text and official bill status should be cited from the official Virginia Legislative Information System (LIS). The LIS site uses a JavaScript application, so direct text linking may vary.
+## Official bill links (Virginia LIS)
+Official text/status should be cited from the **Virginia Legislative Information System (LIS)**.
 
-If you’d like, we can add an **"Official bill links"** section once we confirm the best stable LIS URLs for SB 178 and HB 970.
+- SB 178 (LIS): https://lis.virginia.gov/bill-details/20261/SB178
+- HB 970 (LIS): https://lis.virginia.gov/bill-details/20261/HB970
+
+> Note: LIS runs as a JavaScript application, so some direct subpage links (text versions/amendments) may change. The bill-details pages above are the most stable entry points we’ve found.
