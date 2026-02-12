@@ -8,14 +8,10 @@ const posts = all
 
 const featured = posts.filter((p) => p.data.featured);
 
-// Use the viewer's local time zone (browser default)
-const fmt = (d) => new Intl.DateTimeFormat(undefined, {
-  year: 'numeric',
-  month: 'short',
-  day: '2-digit',
-  hour: '2-digit',
-  minute: '2-digit',
-}).format(d);
+// NOTE: This page is statically rendered at build time, so we can't rely on
+// server-side Intl.DateTimeFormat for "viewer local time".
+// We render ISO datetimes into <time> elements and format them in the browser.
+const iso = (d) => (d instanceof Date ? d.toISOString() : new Date(d).toISOString());
 ---
 
 <BaseLayout title="Community Posts" description="Feedback and perspectives from the dental hygiene community." >
@@ -50,7 +46,9 @@ const fmt = (d) => new Intl.DateTimeFormat(undefined, {
               <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
             </h3>
             <div class="muted">
-              {fmt(post.data.date)}
+              <time class="js-local-datetime" datetime={iso(post.data.date)} data-iso={iso(post.data.date)}>
+                {iso(post.data.date)}
+              </time>
               {post.data.author ? ` • ${post.data.author}` : ''}
               {post.data.location ? ` • ${post.data.location}` : ''}
             </div>
@@ -69,7 +67,9 @@ const fmt = (d) => new Intl.DateTimeFormat(undefined, {
             <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
           </h3>
           <div class="muted">
-            {fmt(post.data.date)}
+            <time class="js-local-datetime" datetime={iso(post.data.date)} data-iso={iso(post.data.date)}>
+              {iso(post.data.date)}
+            </time>
             {post.data.author ? ` • ${post.data.author}` : ''}
             {post.data.location ? ` • ${post.data.location}` : ''}
             {post.data.redacted ? ' • redacted' : ''}
@@ -78,6 +78,26 @@ const fmt = (d) => new Intl.DateTimeFormat(undefined, {
       ))}
     </div>
   </section>
+  <script is:inline>
+    (() => {
+      const fmt = new Intl.DateTimeFormat(undefined, {
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+
+      document.querySelectorAll('time.js-local-datetime[data-iso]').forEach((el) => {
+        const iso = el.getAttribute('data-iso');
+        if (!iso) return;
+        const d = new Date(iso);
+        if (Number.isNaN(d.valueOf())) return;
+        el.textContent = fmt.format(d);
+      });
+    })();
+  </script>
+
   <style>
     /* Slight extra breathing room between "All posts" cards */
     .posts__list { gap: 18px; }

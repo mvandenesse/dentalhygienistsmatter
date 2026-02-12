@@ -12,25 +12,41 @@ const post = await getEntry('posts', slug!);
 if (!post) throw new Error(`Post not found: ${slug}`);
 
 const { Content } = await post.render();
-// Use the viewer's local time zone (browser default)
-const date = new Intl.DateTimeFormat(undefined, {
-  year: 'numeric',
-  month: 'short',
-  day: '2-digit',
-  hour: '2-digit',
-  minute: '2-digit',
-}).format(post.data.date);
+
+// NOTE: This page is statically rendered at build time. We render the ISO datetime
+// and format it in the browser to match the viewer's time zone.
+const dateISO = post.data.date instanceof Date ? post.data.date.toISOString() : new Date(post.data.date).toISOString();
 ---
 
-<BaseLayout title={post.data.title} description={`Community post • ${date}`}>
+<BaseLayout title={post.data.title} description={`Community post • ${dateISO}`}>
   <article class="panel">
     <h1 style="margin-top: 0;">{post.data.title}</h1>
     <div class="muted" style="margin-bottom: 14px;">
-      {date}
+      <time class="js-local-datetime" datetime={dateISO} data-iso={dateISO}>{dateISO}</time>
       {post.data.author ? ` • ${post.data.author}` : ''}
       {post.data.location ? ` • ${post.data.location}` : ''}
       {post.data.redacted ? ' • redacted' : ''}
     </div>
+
+    <script is:inline>
+      (() => {
+        const fmt = new Intl.DateTimeFormat(undefined, {
+          year: 'numeric',
+          month: 'short',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+        });
+
+        document.querySelectorAll('time.js-local-datetime[data-iso]').forEach((el) => {
+          const iso = el.getAttribute('data-iso');
+          if (!iso) return;
+          const d = new Date(iso);
+          if (Number.isNaN(d.valueOf())) return;
+          el.textContent = fmt.format(d);
+        });
+      })();
+    </script>
 
     <Content />
 
