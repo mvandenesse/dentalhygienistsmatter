@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import targets from '../data/legislator-targets.json';
+
+const subject = 'Please oppose SB 178 / HB 970 (patient safety and transparency)';
+const body = `Dear [Delegate/Senator] [Last Name],\n\nI’m a constituent in [City/County]. I’m writing to ask you to oppose SB 178 / HB 970 as written.\n\nThese bills create a new “preventive dental assistant” certification that can perform limited scaling/polishing (“above-the-gumline” cleanings). I’m concerned this can normalize partial cleanings, confuse patients about what care they received, and delay detection/treatment of periodontal disease.\n\nIf the legislature moves forward, please add strict guardrails: clear eligibility criteria, independent competency verification, explicit patient disclosure/informed consent, mandatory outcome reporting, and a sunset clause with independent evaluation.\n\nThank you for your time,\n[Your Name]\n[ZIP]`;
+
+const encodedSubject = encodeURIComponent(subject);
+const encodedBody = encodeURIComponent(body);
+
+function mailto(email) {
+  if (!email) return '';
+  return `mailto:${email}?subject=${encodedSubject}&body=${encodedBody}`;
+}
+---
+
+<BaseLayout title="Send an email" description="Select a representative and open a pre-filled email." >
+  <h1>Send an email</h1>
+  <p class="muted">
+    Select a legislator below. If an email address is available, the button opens your mail app with a pre-filled subject and message.
+    If only a contact form is available, use the “Contact form” link and paste the template.
+  </p>
+
+  <div class="panel">
+    <h2 style="margin-top:0;">Email template</h2>
+    <p class="muted">Copy/edit as needed.</p>
+    <pre style="white-space: pre-wrap; margin:0; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.14); padding: 12px; border-radius: 12px;">{subject}
+
+{body}</pre>
+  </div>
+
+  <h2>Legislators</h2>
+  <div class="grid" style="gap: 12px;">
+    {targets.filter(t => t.id !== 'EXAMPLE').map((t) => (
+      <article class="col-12 panel">
+        <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:baseline;">
+          <h3 style="margin:0;">{t.name}</h3>
+          <div class="muted">{t.role}{t.district ? ` • ${t.district}` : ''}</div>
+        </div>
+        {t.note && <div class="muted" style="margin-top:6px;">{t.note}</div>}
+        <div class="btns" style="margin-top: 12px;">
+          {t.email ? <a class="btn btn--primary" href={mailto(t.email)}>Open email</a> : <span class="muted">No email listed</span>}
+          {t.contactUrl ? <a class="btn" href={t.contactUrl} rel="noopener noreferrer">Contact form</a> : null}
+        </div>
+      </article>
+    ))}
+
+    {targets.filter(t => t.id !== 'EXAMPLE').length === 0 && (
+      <div class="col-12 panel">
+        <p style="margin:0;">Targets list is not populated yet. Once we confirm the current committee(s) and leadership involved for SB 178 / HB 970, we’ll add them here.</p>
+      </div>
+    )}
+  </div>
+
+  <div class="panel" style="margin-top: 18px;">
+    <h2 style="margin-top:0;">What we need to populate this list</h2>
+    <ul style="margin-bottom:0;">
+      <li>Which chamber/committee(s) are currently considering SB 178 / HB 970</li>
+      <li>Which members are the decision-makers (committee members + chair + leadership)</li>
+    </ul>
+  </div>
+</BaseLayout>

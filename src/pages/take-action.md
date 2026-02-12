@@ -31,4 +31,4 @@ Body:
 ## 2) Keep it fact-based
 When you share, include sources. This improves credibility and reduces the chance of being dismissed as partisan.
 
-See: **[Sources](./sources)**
+See: **[Send an email](./take-action-email)** • **[Sources](./sources)**
