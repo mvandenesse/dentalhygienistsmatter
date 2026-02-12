@@ -6,7 +6,8 @@ const subject = 'Please oppose SB 178 / HB 970 (patient safety and transparency)
 const body = `Dear [Delegate/Senator] [Last Name],\n\nI’m a constituent in [City/County]. I’m writing to ask you to oppose SB 178 / HB 970 as written.\n\nThese bills create a new “preventive dental assistant” certification that can perform limited scaling/polishing (“above-the-gumline” cleanings). I’m concerned this can normalize partial cleanings, confuse patients about what care they received, and delay detection/treatment of periodontal disease.\n\nIf the legislature moves forward, please add strict guardrails: clear eligibility criteria, independent competency verification, explicit patient disclosure/informed consent, mandatory outcome reporting, and a sunset clause with independent evaluation.\n\nThank you for your time,\n[Your Name]\n[ZIP]`;
 
 const encodedSubject = encodeURIComponent(subject);
-const encodedBody = encodeURIComponent(body);
+// Some mail clients (notably iOS) expect CRLF newlines in mailto bodies
+const encodedBody = encodeURIComponent(body.replace(/\n/g, '\r\n'));
 
 function mailto(email) {
   if (!email) return '';
