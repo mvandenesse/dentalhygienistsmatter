@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { ImapFlow } from 'imapflow';
 import { simpleParser } from 'mailparser';
 import slugify from 'slugify';
@@ -42,6 +43,10 @@ function pickAuthor(parsed) {
   if (from.name && from.name.trim()) return from.name.trim();
   if (from.address) return from.address;
   return undefined;
+}
+
+function wantsAnonymous(text) {
+  return /please\s+post\s+as\s+anonymous/i.test(text ?? '');
 }
 
 function deriveTitle(parsed) {
