@@ -30,7 +30,7 @@ function mailto(email) {
   </div>
 
   <h2>Legislators</h2>
-  <div class="grid" style="gap: 12px;">
+  <div class="grid" style="gap: 16px;">
     {targets
       .filter((t) => t.id !== 'EXAMPLE')
       .sort((a, b) => (a.id === 'GOVERNOR' ? -1 : b.id === 'GOVERNOR' ? 1 : 0))
@@ -42,21 +42,9 @@ function mailto(email) {
         </div>
         {t.note && <div class="muted" style="margin-top:6px;">{t.note}</div>}
 
-        <div style="margin-top: 10px; display: grid; gap: 6px;">
-          {t.email ? (
-            <div class="muted">Email: <a href={mailto(t.email)}>{t.email}</a></div>
-          ) : (
-            <div class="muted">Email: (not listed)</div>
-          )}
-
-          {t.contactUrl ? (
-            <div class="muted">Contact form: <a href={t.contactUrl} rel="noopener noreferrer">{t.contactUrl}</a></div>
-          ) : null}
-
-          <div class="btns" style="margin-top: 6px;">
-            {t.email ? <a class="btn btn--primary" href={mailto(t.email)}>Open email</a> : <span class="muted">No email listed</span>}
-            {t.contactUrl ? <a class="btn" href={t.contactUrl} rel="noopener noreferrer">Open contact form</a> : null}
-          </div>
+        <div class="btns" style="margin-top: 12px;">
+          {t.email ? <a class="btn btn--primary" href={mailto(t.email)}>Open email</a> : <span class="muted">No email listed</span>}
+          {t.contactUrl ? <a class="btn" href={t.contactUrl} rel="noopener noreferrer">Open contact form</a> : null}
         </div>
       </article>
     ))}
