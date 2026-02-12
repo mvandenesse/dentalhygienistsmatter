@@ -62,9 +62,9 @@ const fmt = (d) => new Intl.DateTimeFormat(undefined, {
 
   <section>
     <h2>All posts</h2>
-    <div class="grid">
+    <div class="grid posts__list">
       {posts.map((post) => (
-        <article class="col-12 panel">
+        <article class="col-12 panel posts__item">
           <h3 style="margin-top: 0; margin-bottom: 6px;">
             <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
           </h3>
@@ -78,4 +78,9 @@ const fmt = (d) => new Intl.DateTimeFormat(undefined, {
       ))}
     </div>
   </section>
+  <style>
+    /* Slight extra breathing room between "All posts" cards */
+    .posts__list { gap: 18px; }
+    .posts__item { margin: 0; }
+  </style>
 </BaseLayout>
