@@ -33,10 +33,21 @@ const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency',
     </p>
   </div>
 
-  <h2>How to read donor tiers and amounts</h2>
+  <h2>Sources and scope</h2>
+  <div class="panel">
+    <ul>
+      <li><strong>Official PAC giving levels:</strong> <a href="https://www.vadental.org/vda-pac" rel="noopener noreferrer">vadental.org/vda-pac</a></li>
+      <li><strong>Official PAC contributor PDF (full list):</strong> <a href="https://www.vadental.org/docs/statevavirginialibraries/vda-pac/pac-contributors.pdf?sfvrsn=5618550f_0" rel="noopener noreferrer">pac-contributors.pdf</a></li>
+      <li><strong>Our Gold/Silver subset:</strong> compiled from a donor-recognition page circulated publicly (screenshot/PDF). This indicates tier recognition, not an endorsement of a specific bill.</li>
+      <li><strong>Scope:</strong> we only publish <strong>Virginia</strong> practice contact information.</li>
+      <li><strong>Harassment policy:</strong> do not harass or threaten anyone. Use this information to communicate respectfully.</li>
+    </ul>
+  </div>
+
+  <h2>How to read donor tiers</h2>
   <div class="panel">
     <p class="muted" style="margin-top: 0;">
-      The source document lists donors by <strong>club/tier</strong>. This indicates a <strong>minimum contribution level</strong> (or fixed level), not necessarily the exact amount given by each individual.
+      The donor recognition page lists donors by <strong>club/tier</strong>. This indicates a <strong>minimum contribution level</strong> (or fixed level), not necessarily the exact amount given by each individual.
     </p>
     <ul>
       <li><strong>{tierMeta.gold.label}:</strong> {tierMeta.gold.amountText} (minimum {formatMoney(tierMeta.gold.minAmount)})</li>
