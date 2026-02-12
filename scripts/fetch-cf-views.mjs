@@ -14,11 +14,34 @@ async function writeOut(obj) {
 
 async function main() {
   const token = env('CF_API_TOKEN');
-  const zoneTag = env('CF_ZONE_ID');
+  let zoneTag = env('CF_ZONE_ID');
 
   // Launch date boundary (YYYY-MM-DD). Required for true “since launch”.
   const since = env('VIEWS_SINCE');
   const hostname = env('CF_HOSTNAME') || 'dentalhygienistsmatter.com';
+
+  // If zone id isn't provided (or looks wrong), try to resolve it by hostname.
+  const looksLikeZoneId = (v) => typeof v === 'string' && /^[a-f0-9]{32}$/i.test(v);
+  if (token && (!looksLikeZoneId(zoneTag))) {
+    try {
+      console.warn('[cf-views] CF_ZONE_ID missing/invalid; attempting to resolve zone id by hostname');
+      const url = `https://api.cloudflare.com/client/v4/zones?name=${encodeURIComponent(hostname)}&status=active&per_page=50`;
+      const r = await fetch(url, {
+        headers: { authorization: `Bearer ${token}` },
+      });
+      const j = await r.json().catch(() => null);
+      const id = j?.result?.[0]?.id;
+      if (looksLikeZoneId(id)) {
+        zoneTag = id;
+        console.log('[cf-views] resolved zone id', { zoneTag: `${zoneTag.slice(0, 6)}…${zoneTag.slice(-6)}` });
+      } else {
+        console.warn('[cf-views] could not resolve zone id', { apiSuccess: j?.success, errors: j?.errors });
+      }
+    } catch (e) {
+      console.warn('[cf-views] zone id resolution failed', String(e?.stack || e));
+    }
+  }
+
 
   console.log('[cf-views] start', { hostname, since, zoneTag: zoneTag ? `${zoneTag.slice(0, 6)}…${zoneTag.slice(-6)}` : null });
 
