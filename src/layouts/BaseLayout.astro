@@ -16,6 +16,9 @@ const nav = [
 const currentPath = Astro.url?.pathname ?? '/';
 const normalize = (p) => (p.length > 1 ? p.replace(/\/$/, '') : p);
 const isActive = (href) => normalize(currentPath) === normalize(href);
+
+// Build-time timestamp; formatted in the viewer's browser local time zone.
+const buildUpdatedISO = new Date().toISOString();
 ---
 <!doctype html>
 <html lang="en">
@@ -80,9 +83,35 @@ const isActive = (href) => normalize(currentPath) === normalize(href);
     <footer class="footer">
       <div class="wrap">
         <p><strong>Disclaimer:</strong> This site is for informational/advocacy purposes and is not medical or legal advice.</p>
-        <p class="muted">Last updated: {new Date().toISOString().slice(0, 10)}</p>
+        <p class="muted">
+          Last updated:
+          <time class="js-local-datetime" datetime={buildUpdatedISO} data-iso={buildUpdatedISO}>
+            {buildUpdatedISO}
+          </time>
+        </p>
       </div>
     </footer>
+
+    <!-- Format any <time class="js-local-datetime" data-iso="..."> elements in the viewer's local timezone. -->
+    <script is:inline>
+      (() => {
+        const fmt = new Intl.DateTimeFormat(undefined, {
+          year: 'numeric',
+          month: 'short',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+        });
+
+        document.querySelectorAll('time.js-local-datetime[data-iso]').forEach((el) => {
+          const iso = el.getAttribute('data-iso');
+          if (!iso) return;
+          const d = new Date(iso);
+          if (Number.isNaN(d.valueOf())) return;
+          el.textContent = fmt.format(d);
+        });
+      })();
+    </script>
 
     <style>
       :root {
