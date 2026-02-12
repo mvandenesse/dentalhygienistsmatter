@@ -1,0 +1,4 @@
+{
+  "gold": { "label": "Gold Club", "amountText": "$1,250 or higher", "minAmount": 1250 },
+  "silver": { "label": "Silver Club", "amountText": "$750", "minAmount": 750 }
+}

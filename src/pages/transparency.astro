@@ -1,12 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import entries from '../data/pac-gold-silver-va.json';
+import tiers from '../data/pac-tiers.json';
 
+const tierMeta = tiers;
 const gold = entries.filter((e) => e.tier === 'gold');
 const silver = entries.filter((e) => e.tier === 'silver');
+
+const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
 ---
 
-<BaseLayout title="Transparency" description="Public information about PAC donor recognition lists and how we present it." >
+<BaseLayout title="Transparency" description="PAC donor recognition lists presented with context and public business contact information." >
   <h1>Transparency</h1>
 
   <div class="panel callout">
@@ -19,28 +23,40 @@ const silver = entries.filter((e) => e.tier === 'silver');
     </p>
   </div>
 
-  <h2>What this list is</h2>
+  <h2>How to read donor tiers and amounts</h2>
   <div class="panel">
+    <p class="muted" style="margin-top: 0;">
+      The source document lists donors by <strong>club/tier</strong>. This indicates a <strong>minimum contribution level</strong> (or fixed level), not necessarily the exact amount given by each individual.
+    </p>
     <ul>
-      <li><strong>Source:</strong> donor recognition list provided to us (screenshot/PDF).</li>
-      <li><strong>Scope:</strong> Virginia practices only.</li>
-      <li><strong>Purpose:</strong> enable patients to ask informed questions about advocacy and policy positions.</li>
-      <li><strong>Harassment policy:</strong> do not harass or threaten anyone. Use this information to communicate respectfully.</li>
+      <li><strong>{tierMeta.gold.label}:</strong> {tierMeta.gold.amountText} (minimum {formatMoney(tierMeta.gold.minAmount)})</li>
+      <li><strong>{tierMeta.silver.label}:</strong> {tierMeta.silver.amountText} (minimum {formatMoney(tierMeta.silver.minAmount)})</li>
     </ul>
   </div>
 
-  <h2>Gold club (draft list)</h2>
+  <h2>Gold club (Virginia only)</h2>
   <div class="panel">
-    <p class="muted">We are currently enriching this list with Virginia office address and phone, with citations. Names may be corrected as we verify spelling.</p>
+    <p class="muted">Practice info (address/phone) is being added with citations. Names may be corrected as we verify spelling.</p>
     <ul>
-      {gold.map((e) => <li>{e.name}</li>)}
+      {gold.map((e) => <li><strong>{e.name}</strong> — {tierMeta.gold.label} ({tierMeta.gold.amountText})</li>)}
     </ul>
   </div>
 
-  <h2>Silver club (draft list)</h2>
+  <h2>Silver club (Virginia only)</h2>
   <div class="panel">
     <ul>
-      {silver.map((e) => <li>{e.name}</li>)}
+      {silver.map((e) => <li><strong>{e.name}</strong> — {tierMeta.silver.label} ({tierMeta.silver.amountText})</li>)}
+    </ul>
+  </div>
+
+  <h2>What will be included for each entry (once verified)</h2>
+  <div class="panel">
+    <ul>
+      <li>Name</li>
+      <li>Practice name</li>
+      <li>Office address + phone</li>
+      <li>Donor tier + minimum amount</li>
+      <li>Source link(s) for practice info</li>
     </ul>
   </div>
 </BaseLayout>
