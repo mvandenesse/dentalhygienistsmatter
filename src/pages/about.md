@@ -14,4 +14,4 @@ description: About this website and its purpose.
 - Focus on policy and patient impact.
 
 ## Contact
-If you want a contact method on the site (email, form, or newsletter signup), tell me what you prefer and I’ll add it.
+Email: [hello@dentalhygienistsmatter.com](mailto:hello@dentalhygienistsmatter.com)
