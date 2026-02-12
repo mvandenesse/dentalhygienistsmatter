@@ -10,6 +10,10 @@ const nav = [
   { href: '/sources', label: 'Sources' },
   { href: '/about', label: 'About' },
 ];
+
+const currentPath = Astro.url?.pathname ?? '/';
+const normalize = (p) => (p.length > 1 ? p.replace(/\/$/, '') : p);
+const isActive = (href) => normalize(currentPath) === normalize(href);
 ---
 <!doctype html>
 <html lang="en">
@@ -35,14 +39,30 @@ const nav = [
             <summary class="nav__summary">Menu</summary>
             <ul class="nav__list nav__list--mobile">
               {nav.map((item) => (
-                <li><a href={item.href}>{item.label}</a></li>
+                <li>
+                  <a
+                    href={item.href}
+                    class={isActive(item.href) ? 'nav__link nav__link--active' : 'nav__link'}
+                    aria-current={isActive(item.href) ? 'page' : undefined}
+                  >
+                    {item.label}
+                  </a>
+                </li>
               ))}
             </ul>
           </details>
 
           <ul class="nav__list nav__list--desktop">
             {nav.map((item) => (
-              <li><a href={item.href}>{item.label}</a></li>
+              <li>
+                <a
+                  href={item.href}
+                  class={isActive(item.href) ? 'nav__link nav__link--active' : 'nav__link'}
+                  aria-current={isActive(item.href) ? 'page' : undefined}
+                >
+                  {item.label}
+                </a>
+              </li>
             ))}
           </ul>
         </nav>
@@ -97,8 +117,13 @@ const nav = [
       .brand__tag { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
       .nav__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
-      .nav a { display: inline-block; padding: 8px 10px; border-radius: 10px; border: 1px solid transparent; }
-      .nav a:hover { border-color: var(--border); text-decoration: none; background: rgba(255,255,255,0.04); }
+      .nav__link { display: inline-block; padding: 8px 10px; border-radius: 10px; border: 1px solid transparent; }
+      .nav__link:hover { border-color: var(--border); text-decoration: none; background: rgba(255,255,255,0.04); }
+      .nav__link--active {
+        border-color: rgba(165,180,252,0.85);
+        background: rgba(165,180,252,0.12);
+        text-decoration: none;
+      }
 
       .nav__mobile { display: none; }
       .nav__summary {
