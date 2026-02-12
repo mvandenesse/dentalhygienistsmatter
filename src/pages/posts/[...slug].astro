@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => data.published !== false);
+  return posts.map((post) => ({ params: { slug: post.slug } }));
+}
+
+const { slug } = Astro.params;
+const post = await getEntry('posts', slug!);
+if (!post) throw new Error(`Post not found: ${slug}`);
+
+const { Content } = await post.render();
+const date = post.data.date.toISOString().slice(0, 10);
+---
+
+<BaseLayout title={post.data.title} description={`Community post • ${date}`}>
+  <article class="panel">
+    <h1 style="margin-top: 0;">{post.data.title}</h1>
+    <div class="muted" style="margin-bottom: 14px;">
+      {date}
+      {post.data.author ? ` • ${post.data.author}` : ''}
+      {post.data.location ? ` • ${post.data.location}` : ''}
+      {post.data.redacted ? ' • redacted' : ''}
+    </div>
+
+    <Content />
+
+    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.14); margin: 18px 0;" />
+    <p class="muted" style="margin: 0;">
+      Want to submit a post? Email
+      <a href="mailto:hello@dentalhygienistsmatter.com">hello@dentalhygienistsmatter.com</a>
+      with subject <code>POST: &lt;short title&gt;</code>.
+    </p>
+  </article>
+</BaseLayout>

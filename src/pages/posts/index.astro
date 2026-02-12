@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const all = await getCollection('posts', ({ data }) => data.published !== false);
+const posts = all
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const featured = posts.filter((p) => p.data.featured);
+---
+
+<BaseLayout title="Community Posts" description="Feedback and perspectives from the dental hygiene community." >
+  <h1>Community posts</h1>
+  <p class="muted">
+    Feedback from dental hygienists and supporters. We focus on policy impact, patient safety, and standards of care.
+  </p>
+
+  <div class="panel callout">
+    <h2 style="margin-top: 0;">Submit your post</h2>
+    <p>
+      Email <a href="mailto:hello@dentalhygienistsmatter.com">hello@dentalhygienistsmatter.com</a>
+      with subject <code>POST: &lt;short title&gt;</code> and include your message in the body.
+      You may request to be posted as <strong>Anonymous</strong>.
+    </p>
+    <p class="muted" style="margin-bottom: 0;">
+      We may lightly edit for clarity and privacy. Do not include patient identifiers.
+    </p>
+  </div>
+
+  {featured.length > 0 && (
+    <section>
+      <h2>Featured</h2>
+      <div class="grid">
+        {featured.map((post) => (
+          <article class="col-12 panel">
+            <h3 style="margin-top: 0; margin-bottom: 6px;">
+              <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
+            </h3>
+            <div class="muted">
+              {post.data.date.toISOString().slice(0, 10)}
+              {post.data.author ? ` • ${post.data.author}` : ''}
+              {post.data.location ? ` • ${post.data.location}` : ''}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section>
+    <h2>All posts</h2>
+    <div class="grid">
+      {posts.map((post) => (
+        <article class="col-12 panel">
+          <h3 style="margin-top: 0; margin-bottom: 6px;">
+            <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
+          </h3>
+          <div class="muted">
+            {post.data.date.toISOString().slice(0, 10)}
+            {post.data.author ? ` • ${post.data.author}` : ''}
+            {post.data.location ? ` • ${post.data.location}` : ''}
+            {post.data.redacted ? ' • redacted' : ''}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
