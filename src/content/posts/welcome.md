@@ -13,6 +13,8 @@ This section shares feedback from the dental hygiene community—focused on **pa
 If you’d like your perspective posted, email **hello@dentalhygienistsmatter.com** with:
 
 - Subject: `POST: <short title>`
-- Body: your message (you can request anonymous posting)
+- Body: your message (free form)
 
-We may lightly edit for clarity and privacy (e.g., remove patient identifiers).
+We extract your displayed name from your email “From” name by default. If you want to be anonymous, write “Please post as Anonymous” in the body.
+
+We remove unsafe content and may lightly edit for clarity and privacy (e.g., remove patient identifiers).

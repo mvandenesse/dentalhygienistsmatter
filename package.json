@@ -6,9 +6,16 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "ingest:email": "node scripts/ingest-imap.mjs",
+    "ingest:run": "node scripts/run-ingest-and-push.mjs"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "astro": "^5.17.1",
+    "dotenv": "^17.2.4",
+    "imapflow": "^1.2.9",
+    "mailparser": "^3.9.3",
+    "sanitize-html": "^2.17.0",
+    "slugify": "^1.6.6"
   }
 }
