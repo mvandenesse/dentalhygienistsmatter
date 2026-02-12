@@ -67,7 +67,7 @@ async function main() {
         zones(filter: { zoneTag: $zoneTag }) {
           httpRequests1dGroups(
             limit: 1000
-            filter: { date_geq: $since, date_leq: $until, hostname: $hostname }
+            filter: { date_geq: $since, date_leq: $until, clientRequestHTTPHost: $hostname }
           ) {
             sum {
               pageViews
