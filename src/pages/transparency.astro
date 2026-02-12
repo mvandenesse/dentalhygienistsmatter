@@ -192,11 +192,13 @@ const formatMoney = (n) =>
     /* Tighter spacing between verified doctor cards */
     .tsec__cards {
       margin-top: 12px;
-      gap: 14px;
+      gap: 0;
     }
     .tsec__card {
       background: rgba(255, 255, 255, 0.04);
+      margin-bottom: 10px;
     }
+    .tsec__cards .tsec__card:last-child { margin-bottom: 0; }
     .tsec__cardHead {
       display: flex;
       flex-wrap: wrap;

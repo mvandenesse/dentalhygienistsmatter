@@ -30,12 +30,12 @@ function mailto(email) {
   </div>
 
   <h2>Legislators</h2>
-  <div class="grid" style="gap: 16px;">
+  <div class="grid reps__list" style="gap: 0;">
     {targets
       .filter((t) => t.id !== 'EXAMPLE')
       .sort((a, b) => (a.id === 'GOVERNOR' ? -1 : b.id === 'GOVERNOR' ? 1 : 0))
       .map((t) => (
-      <article class="col-12 panel">
+      <article class="col-12 panel reps__item">
         <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:baseline;">
           <h3 style="margin:0;">{t.name}</h3>
           <div class="muted">{t.role}{t.district ? ` • ${t.district}` : ''}</div>
@@ -63,4 +63,9 @@ function mailto(email) {
       <li>Which members are the decision-makers (committee members + chair + leadership)</li>
     </ul>
   </div>
+
+  <style>
+    .reps__item { margin-bottom: 10px; }
+    .reps__item:last-child { margin-bottom: 0; }
+  </style>
 </BaseLayout>
