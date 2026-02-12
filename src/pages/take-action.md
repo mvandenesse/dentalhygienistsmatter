@@ -33,4 +33,6 @@ When you share, include sources. This improves credibility and reduces the chanc
 
 See: **[Send an email](./take-action-email)** • **[Sources](./sources)**
 
-**Direct link:** https://dentalhygienistsmatter.com/take-action-email/
+<div class="btns">
+  <a class="btn btn--primary" href="/take-action-email">Send an email (pre-filled)</a>
+</div>
