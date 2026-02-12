@@ -20,8 +20,16 @@ async function main() {
   const since = env('VIEWS_SINCE');
   const hostname = env('CF_HOSTNAME') || 'dentalhygienistsmatter.com';
 
+  console.log('[cf-views] start', { hostname, since, zoneTag: zoneTag ? `${zoneTag.slice(0, 6)}…${zoneTag.slice(-6)}` : null });
+
   // Soft-fail by writing a sentinel file if not configured.
   if (!token || !zoneTag || !since) {
+    console.warn('[cf-views] missing env var(s)', {
+      hasToken: Boolean(token),
+      hasZoneId: Boolean(zoneTag),
+      hasSince: Boolean(since),
+    });
+
     await writeOut({
       viewsSinceLaunch: null,
       asOf: new Date().toISOString(),
@@ -49,6 +57,8 @@ async function main() {
 
   const until = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 
+  console.log('[cf-views] fetching', { since, until, hostname });
+
   const resp = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST',
     headers: {
@@ -63,16 +73,20 @@ async function main() {
 
   if (!resp.ok) {
     const body = await resp.text().catch(() => '');
+    console.error('[cf-views] http error', resp.status, body.slice(0, 400));
     throw new Error(`Cloudflare GraphQL error ${resp.status}: ${body.slice(0, 400)}`);
   }
 
   const json = await resp.json();
   if (json.errors?.length) {
+    console.error('[cf-views] graphql errors', json.errors);
     throw new Error(`Cloudflare GraphQL returned errors: ${JSON.stringify(json.errors).slice(0, 600)}`);
   }
 
   const groups = json?.data?.viewer?.zones?.[0]?.httpRequests1dGroups || [];
   const views = groups.reduce((acc, g) => acc + (g?.sum?.pageViews ?? 0), 0);
+
+  console.log('[cf-views] ok', { viewsSinceLaunch: views });
 
   await writeOut({
     viewsSinceLaunch: views,
@@ -84,6 +98,8 @@ async function main() {
 }
 
 main().catch(async (err) => {
+  console.error('[cf-views] failed', String(err?.stack || err));
+
   // Don’t break deploys; write a sentinel and exit 0.
   await writeOut({
     viewsSinceLaunch: null,
