@@ -38,14 +38,14 @@ const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency',
   <div class="panel">
     <p class="muted">Practice info (address/phone) is being added with citations. Names may be corrected as we verify spelling.</p>
     <ul>
-      {gold.map((e) => <li><strong>{e.name}</strong> — {tierMeta.gold.label}</li>)}
+      {gold.map((e) => <li><strong>{e.name}</strong></li>)}
     </ul>
   </div>
 
   <h2>Silver club (Virginia only)</h2>
   <div class="panel">
     <ul>
-      {silver.map((e) => <li><strong>{e.name}</strong> — {tierMeta.silver.label}</li>)}
+      {silver.map((e) => <li><strong>{e.name}</strong></li>)}
     </ul>
   </div>
 
