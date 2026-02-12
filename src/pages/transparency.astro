@@ -65,7 +65,7 @@ const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency',
     </div>
   </div>
 
-  <h2>Gold club (pending verification)</h2>
+  <h2 style="margin-top: 42px;">Gold club (pending verification)</h2>
   <div class="panel">
     <p class="muted">These names are listed in the donor recognition list, but practice details are not yet verified.</p>
     <ul>
@@ -73,14 +73,14 @@ const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency',
     </ul>
   </div>
 
-  <h2>Silver club (pending verification)</h2>
+  <h2 style="margin-top: 42px;">Silver club (pending verification)</h2>
   <div class="panel">
     <ul>
       {pendingSilver.map((e) => <li><strong>{e.name}</strong>{e.notes ? <span class="muted"> — {e.notes}</span> : null}</li>)}
     </ul>
   </div>
 
-  <h2>What will be included for each verified entry</h2>
+  <h2 style="margin-top: 42px;">What will be included for each verified entry</h2>
   <div class="panel">
     <ul>
       <li>Name</li>
