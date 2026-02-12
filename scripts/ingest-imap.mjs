@@ -112,9 +112,9 @@ async function main() {
   try {
     await client.mailboxOpen(mailbox);
 
-    // Pull all message-ids for subjects starting with POST:
-    // Use server-side search if possible.
-    const uids = await client.search({ header: ['subject', 'POST:'] });
+    // Gmail IMAP header search can be finicky; fetch recent mail and filter by subject.
+    const allUids = await client.search({ all: true });
+    const uids = allUids; // mailbox is typically small; can optimize later.
 
     const seenMessageIds = new Set();
 
@@ -132,7 +132,6 @@ async function main() {
         continue; // already ingested
       }
 
-      const author = pickAuthor(parsed);
       const title = deriveTitle(parsed);
       const date = parsed.date ? new Date(parsed.date) : new Date();
       const dateISO = date.toISOString().slice(0, 10);
@@ -140,6 +139,8 @@ async function main() {
       // Prefer text; fallback to stripped html.
       const text = parsed.text ?? (parsed.html ? sanitizeHtml(parsed.html, { allowedTags: [], allowedAttributes: {} }) : '');
       const body = safeTextToMarkdown(text);
+
+      const author = wantsAnonymous(body) ? 'Anonymous' : pickAuthor(parsed);
 
       const slugBase = slugify(title, { lower: true, strict: true, trim: true }) || 'post';
       const uniqueSuffix = Date.now().toString(36);
