@@ -22,17 +22,21 @@ const iso = (d) => (d instanceof Date ? d.toISOString() : new Date(d).toISOStrin
 
   <div class="panel callout">
     <h2 style="margin-top: 0;">Submit your post</h2>
-    <p>
-      Email <a href="mailto:hello@dentalhygienistsmatter.com">hello@dentalhygienistsmatter.com</a>
-      with:
+
+    <p style="margin-top: 10px;">
+      We post community voices to keep the discussion grounded in patient safety, standards of care, and informed consent.
     </p>
-    <ul>
-      <li>Subject: <code>POST: &lt;short title&gt;</code></li>
-      <li>Body: your message (free form)</li>
-    </ul>
-    <p class="muted" style="margin-bottom: 0;">
-      Your displayed name is taken from your email “From” name by default. If you want to be anonymous, write “Please post as Anonymous” in the body.
-      Do not include patient identifiers. We remove unsafe content and may lightly edit for clarity and privacy.
+
+    <a
+      class="btn btn--primary"
+      href={`mailto:hello@dentalhygienistsmatter.com?subject=${encodeURIComponent('POST: ')}&body=${encodeURIComponent('Write your message here (free form).\n\nOptional: If you want to be anonymous, include: Please post as Anonymous\n\nPlease do not include patient identifiers.')}`}
+    >
+      Post by email (opens your mail app)
+    </a>
+
+    <p class="muted" style="margin-top: 10px; margin-bottom: 0;">
+      Subject is pre-filled. Just add a short title after <code>POST:</code> and write your message.
+      We may lightly edit for clarity and privacy.
     </p>
   </div>
 
@@ -102,5 +106,23 @@ const iso = (d) => (d instanceof Date ? d.toISOString() : new Date(d).toISOStrin
     /* Slight extra breathing room between "All posts" cards */
     .posts__list { gap: 18px; }
     .posts__item { margin: 0; }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.18);
+      text-decoration: none;
+      font-weight: 750;
+    }
+    .btn--primary {
+      background: rgba(34,197,94,0.18);
+      border-color: rgba(34,197,94,0.35);
+      color: var(--text);
+    }
+    .btn--primary:hover {
+      background: rgba(34,197,94,0.26);
+      text-decoration: none;
+    }
   </style>
 </BaseLayout>

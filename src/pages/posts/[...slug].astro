@@ -52,9 +52,13 @@ const dateISO = post.data.date instanceof Date ? post.data.date.toISOString() : 
 
     <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.14); margin: 18px 0;" />
     <p class="muted" style="margin: 0;">
-      Want to submit a post? Email
-      <a href="mailto:hello@dentalhygienistsmatter.com">hello@dentalhygienistsmatter.com</a>
-      with subject <code>POST: &lt;short title&gt;</code>.
+      Want to submit a post?
+      <a
+        href={`mailto:hello@dentalhygienistsmatter.com?subject=${encodeURIComponent('POST: ')}`}
+      >
+        Email hello@dentalhygienistsmatter.com
+      </a>
+      (subject pre-filled).
     </p>
   </article>
 </BaseLayout>
