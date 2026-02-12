@@ -1,0 +1,94 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const OUT_PATH = path.resolve('src/data/site-metrics.json');
+
+function env(name) {
+  return process.env[name]?.toString().trim();
+}
+
+async function writeOut(obj) {
+  await fs.mkdir(path.dirname(OUT_PATH), { recursive: true });
+  await fs.writeFile(OUT_PATH, JSON.stringify(obj, null, 2) + '\n', 'utf8');
+}
+
+async function main() {
+  const token = env('CF_API_TOKEN');
+  const zoneTag = env('CF_ZONE_ID');
+
+  // Launch date boundary (YYYY-MM-DD). Required for true “since launch”.
+  const since = env('VIEWS_SINCE');
+  const hostname = env('CF_HOSTNAME') || 'dentalhygienistsmatter.com';
+
+  // Soft-fail by writing a sentinel file if not configured.
+  if (!token || !zoneTag || !since) {
+    await writeOut({
+      viewsSinceLaunch: null,
+      asOf: new Date().toISOString(),
+      note: 'Cloudflare views not configured. Set CF_API_TOKEN, CF_ZONE_ID, VIEWS_SINCE (YYYY-MM-DD).',
+    });
+    return;
+  }
+
+  const query = `
+    query($zoneTag: String!, $since: String!, $until: String!, $hostname: String!) {
+      viewer {
+        zones(filter: { zoneTag: $zoneTag }) {
+          httpRequests1dGroups(
+            limit: 1000
+            filter: { date_geq: $since, date_leq: $until, hostname: $hostname }
+          ) {
+            sum {
+              pageViews
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const until = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+
+  const resp = await fetch('https://api.cloudflare.com/client/v4/graphql', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      query,
+      variables: { zoneTag, since, until, hostname },
+    }),
+  });
+
+  if (!resp.ok) {
+    const body = await resp.text().catch(() => '');
+    throw new Error(`Cloudflare GraphQL error ${resp.status}: ${body.slice(0, 400)}`);
+  }
+
+  const json = await resp.json();
+  if (json.errors?.length) {
+    throw new Error(`Cloudflare GraphQL returned errors: ${JSON.stringify(json.errors).slice(0, 600)}`);
+  }
+
+  const groups = json?.data?.viewer?.zones?.[0]?.httpRequests1dGroups || [];
+  const views = groups.reduce((acc, g) => acc + (g?.sum?.pageViews ?? 0), 0);
+
+  await writeOut({
+    viewsSinceLaunch: views,
+    asOf: new Date().toISOString(),
+    since,
+    source: 'cloudflare:httpRequests1dGroups.sum.pageViews',
+    hostname,
+  });
+}
+
+main().catch(async (err) => {
+  // Don’t break deploys; write a sentinel and exit 0.
+  await writeOut({
+    viewsSinceLaunch: null,
+    asOf: new Date().toISOString(),
+    error: String(err?.stack || err),
+    note: 'Cloudflare views fetch failed; deploy continued. Check CF_API_TOKEN/CF_ZONE_ID/VIEWS_SINCE.',
+  });
+});

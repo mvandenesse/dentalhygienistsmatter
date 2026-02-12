@@ -1,4 +1,6 @@
 ---
+import metrics from '../data/site-metrics.json';
+
 const { title = 'Dental Hygienists Matter', description = 'Protecting standards of care in dental hygiene. Evidence-based information on Virginia workforce legislation affecting preventive dental care.' } = Astro.props;
 
 const nav = [
@@ -83,7 +85,14 @@ const buildUpdatedISO = new Date().toISOString();
     <footer class="footer">
       <div class="wrap">
         <p><strong>Disclaimer:</strong> This site is for informational/advocacy purposes and is not medical or legal advice.</p>
-        <p class="muted">
+
+        {metrics?.viewsSinceLaunch != null && (
+          <p class="muted" style="margin-top: 10px; margin-bottom: 0;">
+            Views since launch: {Number(metrics.viewsSinceLaunch).toLocaleString()}
+          </p>
+        )}
+
+        <p class="muted" style="margin-top: 10px;">
           Last updated:
           <time class="js-local-datetime" datetime={buildUpdatedISO} data-iso={buildUpdatedISO}>
             {buildUpdatedISO}
