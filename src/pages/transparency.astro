@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import entries from '../data/pac-gold-silver-va.json';
+
+const gold = entries.filter((e) => e.tier === 'gold');
+const silver = entries.filter((e) => e.tier === 'silver');
+---
+
+<BaseLayout title="Transparency" description="Public information about PAC donor recognition lists and how we present it." >
+  <h1>Transparency</h1>
+
+  <div class="panel callout">
+    <p style="margin-top: 0;">
+      Patients deserve transparency about political advocacy and funding that may shape health policy.
+    </p>
+    <p class="muted" style="margin-bottom: 0;">
+      We present donor recognition information as <strong>PAC contribution recognition</strong> (not as a claim that an individual endorsed a specific bill).
+      We list only <strong>public business contact information</strong> (office address/phone), with source links, and we do not publish personal contact details.
+    </p>
+  </div>
+
+  <h2>What this list is</h2>
+  <div class="panel">
+    <ul>
+      <li><strong>Source:</strong> donor recognition list provided to us (screenshot/PDF).</li>
+      <li><strong>Scope:</strong> Virginia practices only.</li>
+      <li><strong>Purpose:</strong> enable patients to ask informed questions about advocacy and policy positions.</li>
+      <li><strong>Harassment policy:</strong> do not harass or threaten anyone. Use this information to communicate respectfully.</li>
+    </ul>
+  </div>
+
+  <h2>Gold club (draft list)</h2>
+  <div class="panel">
+    <p class="muted">We are currently enriching this list with Virginia office address and phone, with citations. Names may be corrected as we verify spelling.</p>
+    <ul>
+      {gold.map((e) => <li>{e.name}</li>)}
+    </ul>
+  </div>
+
+  <h2>Silver club (draft list)</h2>
+  <div class="panel">
+    <ul>
+      {silver.map((e) => <li>{e.name}</li>)}
+    </ul>
+  </div>
+</BaseLayout>
