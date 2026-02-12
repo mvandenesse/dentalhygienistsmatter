@@ -1,5 +1,14 @@
 [
   {
+    "id": "GOVERNOR",
+    "name": "Office of the Governor (Virginia)",
+    "role": "Governor / Constituent Services",
+    "district": "",
+    "email": "",
+    "contactUrl": "https://www.governor.virginia.gov/constituent-services/",
+    "note": "Use the contact page to submit a message to the Governor. Some offices do not publish a direct email address."
+  },
+  {
     "id": "HOUSE_SPEAKER",
     "name": "Del. Don Scott",
     "role": "Speaker of the House",
