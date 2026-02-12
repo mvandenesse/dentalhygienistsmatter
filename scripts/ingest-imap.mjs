@@ -134,7 +134,7 @@ async function main() {
 
       const title = deriveTitle(parsed);
       const date = parsed.date ? new Date(parsed.date) : new Date();
-      const dateISO = date.toISOString().slice(0, 10);
+      const dateISO = date.toISOString();
 
       // Prefer text; fallback to stripped html.
       const text = parsed.text ?? (parsed.html ? sanitizeHtml(parsed.html, { allowedTags: [], allowedAttributes: {} }) : '');

@@ -7,6 +7,16 @@ const posts = all
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const featured = posts.filter((p) => p.data.featured);
+
+const fmt = (d) => new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'short',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZone: 'UTC',
+  timeZoneName: 'short',
+}).format(d);
 ---
 
 <BaseLayout title="Community Posts" description="Feedback and perspectives from the dental hygiene community." >
@@ -41,7 +51,7 @@ const featured = posts.filter((p) => p.data.featured);
               <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
             </h3>
             <div class="muted">
-              {post.data.date.toISOString().slice(0, 10)}
+              {fmt(post.data.date)}
               {post.data.author ? ` • ${post.data.author}` : ''}
               {post.data.location ? ` • ${post.data.location}` : ''}
             </div>
@@ -60,7 +70,7 @@ const featured = posts.filter((p) => p.data.featured);
             <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
           </h3>
           <div class="muted">
-            {post.data.date.toISOString().slice(0, 10)}
+            {fmt(post.data.date)}
             {post.data.author ? ` • ${post.data.author}` : ''}
             {post.data.location ? ` • ${post.data.location}` : ''}
             {post.data.redacted ? ' • redacted' : ''}
