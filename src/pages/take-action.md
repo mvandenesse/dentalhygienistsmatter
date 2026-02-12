@@ -34,5 +34,9 @@ When you share, include sources. This improves credibility and reduces the chanc
 See: **[Send an email](./take-action-email)** • **[Sources](./sources)**
 
 <div class="btns">
-  <a class="btn btn--primary" href="/take-action-email">Send an email (pre-filled)</a>
+  <a class="btn btn--primary" href="/take-action-email">Send an email to decision-makers (pre-filled)</a>
+</div>
+
+<div class="panel callout" style="margin-top: 12px;">
+  <p style="margin: 0;"><strong>Fastest way to help:</strong> tap the button above, pick a legislator, and send the pre-filled message (edit your name + ZIP).</p>
 </div>
