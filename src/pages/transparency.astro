@@ -115,13 +115,13 @@ const formatMoney = (n) =>
             <div class="muted" style="margin-top: 6px;">{fmtAddr(e)}</div>
 
             {e.phone && (
-              <div style="margin-top: 6px;">
+              <div style="margin-top: 4px;">
                 Phone: <a href={`tel:${e.phone}`}>{fmtPhone(e.phone)}</a>
               </div>
             )}
 
             {e.sourceUrl && (
-              <div class="muted" style="margin-top: 6px;">
+              <div class="muted" style="margin-top: 4px;">
                 Source: <a href={e.sourceUrl} rel="noopener noreferrer">{e.sourceUrl}</a>
               </div>
             )}
@@ -202,7 +202,7 @@ const formatMoney = (n) =>
     .tsec__cardHead {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
       justify-content: space-between;
       align-items: baseline;
     }
