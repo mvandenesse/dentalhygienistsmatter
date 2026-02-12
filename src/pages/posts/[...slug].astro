@@ -54,7 +54,7 @@ const dateISO = post.data.date instanceof Date ? post.data.date.toISOString() : 
     <p class="muted" style="margin: 0;">
       Want to submit a post?
       <a
-        href={`mailto:hello@dentalhygienistsmatter.com?subject=${encodeURIComponent('POST: ')}`}
+        href={`mailto:hello@dentalhygienistsmatter.com?subject=${encodeURIComponent('POST: ')}&body=${encodeURIComponent('In the subject line, add a short title after “POST:”.\n\nWrite your message here (free form).\n\nOptional: If you want to be anonymous, include: Please post as Anonymous\n\nPlease do not include patient identifiers.')}`}
       >
         Email hello@dentalhygienistsmatter.com
       </a>

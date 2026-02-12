@@ -29,7 +29,7 @@ const iso = (d) => (d instanceof Date ? d.toISOString() : new Date(d).toISOStrin
 
     <a
       class="btn btn--primary"
-      href={`mailto:hello@dentalhygienistsmatter.com?subject=${encodeURIComponent('POST: ')}&body=${encodeURIComponent('Write your message here (free form).\n\nOptional: If you want to be anonymous, include: Please post as Anonymous\n\nPlease do not include patient identifiers.')}`}
+      href={`mailto:hello@dentalhygienistsmatter.com?subject=${encodeURIComponent('POST: ')}&body=${encodeURIComponent('In the subject line, add a short title after “POST:”.\n\nWrite your message here (free form).\n\nOptional: If you want to be anonymous, include: Please post as Anonymous\n\nPlease do not include patient identifiers.')}`}
     >
       Post by email (opens your mail app)
     </a>
