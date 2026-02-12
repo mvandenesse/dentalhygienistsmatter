@@ -32,3 +32,5 @@ Body:
 When you share, include sources. This improves credibility and reduces the chance of being dismissed as partisan.
 
 See: **[Send an email](./take-action-email)** • **[Sources](./sources)**
+
+**Direct link:** https://dentalhygienistsmatter.com/take-action-email/
