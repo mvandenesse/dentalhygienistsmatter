@@ -62,12 +62,12 @@ async function main() {
   }
 
   const query = `
-    query($zoneTag: String!, $since: String!, $until: String!, $hostname: String!) {
+    query($zoneTag: String!, $since: String!, $until: String!) {
       viewer {
         zones(filter: { zoneTag: $zoneTag }) {
           httpRequests1dGroups(
             limit: 1000
-            filter: { date_geq: $since, date_leq: $until, clientRequestHTTPHost: $hostname }
+            filter: { date_geq: $since, date_leq: $until }
           ) {
             sum {
               pageViews
@@ -90,7 +90,7 @@ async function main() {
     },
     body: JSON.stringify({
       query,
-      variables: { zoneTag, since, until, hostname },
+      variables: { zoneTag, since, until },
     }),
   });
 
@@ -117,6 +117,7 @@ async function main() {
     since,
     source: 'cloudflare:httpRequests1dGroups.sum.pageViews',
     hostname,
+    note: 'Hostname filter not supported on httpRequests1dGroups for this zone; value reflects zone totals.',
   });
 }
 
