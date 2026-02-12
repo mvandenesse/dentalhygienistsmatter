@@ -1,11 +1,288 @@
 [
   {
-    "id": "EXAMPLE",
-    "name": "(Add targets here)",
-    "role": "Delegate/Senator",
+    "id": "HOUSE_SPEAKER",
+    "name": "Del. Don Scott",
+    "role": "Speaker of the House",
+    "district": "84",
+    "email": "DelDScott@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0322"
+  },
+  {
+    "id": "HOUSE_MAJORITY",
+    "name": "Del. Charniele Herring",
+    "role": "House Majority Leader",
+    "district": "4",
+    "email": "DelCHerring@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0208"
+  },
+  {
+    "id": "HOUSE_MINORITY",
+    "name": "Del. Terry Kilgore",
+    "role": "House Minority Leader",
+    "district": "45",
+    "email": "DelTKilgore@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0056"
+  },
+
+  {
+    "id": "H12_AUSTIN",
+    "name": "Del. Terry Austin",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "37",
+    "email": "DelTAustin@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0253"
+  },
+  {
+    "id": "H12_BALLARD",
+    "name": "Del. Jason Ballard",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "42",
+    "email": "DelJBallard@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0333"
+  },
+  {
+    "id": "H12_CLARK",
+    "name": "Del. Nadarius Clark",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "84",
+    "email": "DelNClark@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0336"
+  },
+  {
+    "id": "H12_JCOLE",
+    "name": "Del. Joshua Cole",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "65",
+    "email": "DelJCole@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0314"
+  },
+  {
+    "id": "H12_NCOLE",
+    "name": "Del. Nicole Cole",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "66",
+    "email": "DelNCole@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0389"
+  },
+  {
+    "id": "H12_DOWNEY",
+    "name": "Del. Mark Downey",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "69",
+    "email": "DelMDowney@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0392"
+  },
+  {
+    "id": "H12_GARRETT",
+    "name": "Del. Tommy Garrett",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "56",
+    "email": "DelTGarrett@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0362"
+  },
+  {
+    "id": "H12_HODGES",
+    "name": "Del. Keith Hodges",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "68",
+    "email": "DelKHodges@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0238"
+  },
+  {
+    "id": "H12_KENT",
+    "name": "Del. Hillary Pugh Kent",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "67",
+    "email": "DelHKent@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0369"
+  },
+  {
+    "id": "H12_LAUFER",
+    "name": "Del. Amy Laufer",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "55",
+    "email": "DelALaufer@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0371"
+  },
+  {
+    "id": "H12_NIVAR",
+    "name": "Del. May Nivar",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "57",
+    "email": "DelMNivar@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0397"
+  },
+  {
+    "id": "H12_OATES",
+    "name": "Del. Delores Oates",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "31",
+    "email": "DelDOates@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0377"
+  },
+  {
+    "id": "H12_PENCE",
+    "name": "Del. Justin Pence",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "33",
+    "email": "DelJPence@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0398"
+  },
+  {
+    "id": "H12_RUNION",
+    "name": "Del. Chris Runion",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "35",
+    "email": "DelCRunion@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0321"
+  },
+  {
+    "id": "H12_WARE",
+    "name": "Del. Lee Ware",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "72",
+    "email": "DelLWare@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0124"
+  },
+  {
+    "id": "H12_WHITTLE",
+    "name": "Del. Madison Whittle",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "49",
+    "email": "DelMWhittle@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0401"
+  },
+  {
+    "id": "H12_WILT",
+    "name": "Del. Tony Wilt",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "34",
+    "email": "DelTWilt@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0231"
+  },
+  {
+    "id": "H12_WRIGHT",
+    "name": "Del. Tommy Wright",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "50",
+    "email": "DelTWright@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0136"
+  },
+  {
+    "id": "H12_ZEHR",
+    "name": "Del. Eric Zehr",
+    "role": "House Health, Welfare & Institutions (Committee)",
+    "district": "51",
+    "email": "DelEZehr@house.virginia.gov",
+    "contactUrl": "https://house.vga.virginia.gov/members/H0383"
+  },
+
+  {
+    "id": "SEN_EDHEALTH_FAVOLA",
+    "name": "Sen. Barbara Favola",
+    "role": "Senate Education & Health (Committee Chair)",
+    "district": "40",
+    "email": "senatorfavola@senate.virginia.gov",
+    "contactUrl": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S86"
+  },
+  {
+    "id": "SEN_EDHEALTH_AIRD",
+    "name": "Sen. Lashrecse Aird",
+    "role": "Senate Education & Health (Committee)",
     "district": "",
-    "email": "",
-    "contactUrl": "",
-    "note": "This is a placeholder entry. We'll replace with real committee members + leadership once confirmed."
+    "email": "senatoraird@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_BAGBY",
+    "name": "Sen. Lamont Bagby",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorbagby@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_BOYSKO",
+    "name": "Sen. Jennifer Boysko",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorboysko@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_CRAIG",
+    "name": "Sen. Christie New Craig",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorcraig@senate.virginia.gov",
+    "note": "Email format is the standard Senate pattern; verify if bounce occurs."
+  },
+  {
+    "id": "SEN_EDHEALTH_DURANT",
+    "name": "Sen. Tara Durant",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatordurant@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_HEAD",
+    "name": "Sen. Christopher Head",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorhead@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_LOCKE",
+    "name": "Sen. Mamie Locke",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorlocke@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_LUCAS",
+    "name": "Sen. Louise Lucas",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorlucas@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_PEAKE",
+    "name": "Sen. Mark Peake",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorpeake@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_PEKARSKY",
+    "name": "Sen. Stella Pekarsky",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorpekarsky@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_PERRY",
+    "name": "Sen. Russet Perry",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorperry@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_PILLION",
+    "name": "Sen. Todd Pillion",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorpillion@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_SUETTERLEIN",
+    "name": "Sen. Dave Suetterlein",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorsuetterlein@senate.virginia.gov"
+  },
+  {
+    "id": "SEN_EDHEALTH_VANVALKENBURG",
+    "name": "Sen. Schuyler VanValkenburg",
+    "role": "Senate Education & Health (Committee)",
+    "district": "",
+    "email": "senatorvanvalkenburg@senate.virginia.gov",
+    "note": "Verify email if bounce occurs."
   }
 ]
