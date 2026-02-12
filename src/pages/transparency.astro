@@ -4,6 +4,7 @@ import entries from '../data/pac-gold-silver-va.json';
 import tiers from '../data/pac-tiers.json';
 
 const tierMeta = tiers;
+
 const gold = entries.filter((e) => e.tier === 'gold');
 const silver = entries.filter((e) => e.tier === 'silver');
 
@@ -17,10 +18,18 @@ const fmtAddr = (e) => {
   return parts.join(', ');
 };
 
-const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
+const formatMoney = (n) =>
+  new Intl.NumberFormat(undefined, {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0,
+  }).format(n);
 ---
 
-<BaseLayout title="Transparency" description="PAC donor recognition lists presented with context and public business contact information." >
+<BaseLayout
+  title="Transparency"
+  description="PAC donor recognition lists presented with context and public business contact information."
+>
   <h1>Transparency</h1>
 
   <div class="panel callout">
@@ -28,77 +37,172 @@ const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency',
       Patients deserve transparency about political advocacy and funding that may shape health policy.
     </p>
     <p class="muted" style="margin-bottom: 0;">
-      We present donor recognition information as <strong>PAC contribution recognition</strong> (not as a claim that an individual endorsed a specific bill).
-      We list only <strong>public business contact information</strong> (office address/phone), with source links, and we do not publish personal contact details.
+      We present donor recognition information as <strong>PAC contribution recognition</strong> (not as a claim that an
+      individual endorsed a specific bill). We list only <strong>public business contact information</strong> (office
+      address/phone), with source links, and we do not publish personal contact details.
     </p>
   </div>
 
-  <h2>Sources and scope</h2>
-  <div class="panel">
-    <ul>
-      <li><strong>Official PAC giving levels:</strong> <a href="https://www.vadental.org/vda-pac" rel="noopener noreferrer">vadental.org/vda-pac</a></li>
-      <li><strong>Official PAC contributor PDF (full list):</strong> <a href="https://www.vadental.org/docs/statevavirginialibraries/vda-pac/pac-contributors.pdf?sfvrsn=5618550f_0" rel="noopener noreferrer">pac-contributors.pdf</a></li>
-      <li><strong>Our Gold/Silver subset:</strong> compiled from a donor-recognition page circulated publicly (screenshot/PDF). This indicates tier recognition, not an endorsement of a specific bill.</li>
-      <li><strong>Scope:</strong> we only publish <strong>Virginia</strong> practice contact information.</li>
-      <li><strong>Harassment policy:</strong> do not harass or threaten anyone. Use this information to communicate respectfully.</li>
-    </ul>
-  </div>
-
-  <h2>How to read donor tiers</h2>
-  <div class="panel">
-    <p class="muted" style="margin-top: 0;">
-      The donor recognition page lists donors by <strong>club/tier</strong>. This indicates a <strong>minimum contribution level</strong> (or fixed level), not necessarily the exact amount given by each individual.
-    </p>
-    <ul>
-      <li><strong>{tierMeta.gold.label}:</strong> {tierMeta.gold.amountText} (minimum {formatMoney(tierMeta.gold.minAmount)})</li>
-      <li><strong>{tierMeta.silver.label}:</strong> {tierMeta.silver.amountText} (minimum {formatMoney(tierMeta.silver.minAmount)})</li>
-    </ul>
-  </div>
-
-  <h2>Verified practice information (Virginia only)</h2>
-  <div class="panel">
-    <p class="muted" style="margin-top:0;">This section includes entries where we have verified Virginia office contact details and a source link. Some entries use public business listings (Yelp/NPI/directories) when a practice contact page is not easily accessible.</p>
-
-    <div class="grid" style="margin-top: 12px; gap: 10px;">
-      {verified.map((e) => (
-        <article class="col-12 panel" style="background: rgba(255,255,255,0.04);">
-          <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:baseline;">
-            <h3 style="margin:0;">{e.name}</h3>
-            <div class="muted">{(e.tier === 'gold' ? tierMeta.gold.label : tierMeta.silver.label)}</div>
-          </div>
-          {e.practiceName && <div style="margin-top:6px;"><strong>{e.practiceName}</strong></div>}
-          <div class="muted" style="margin-top:6px;">{fmtAddr(e)}</div>
-          {e.phone && <div style="margin-top:6px;">Phone: <a href={`tel:${e.phone}`}>{fmtPhone(e.phone)}</a></div>}
-          {e.sourceUrl && <div class="muted" style="margin-top:6px;">Source: <a href={e.sourceUrl} rel="noopener noreferrer">{e.sourceUrl}</a></div>}
-          {e.confidence && <div class="muted" style="margin-top:6px;">Confidence: {e.confidence}{e.notes ? ` • ${e.notes}` : ''}</div>}
-        </article>
-      ))}
+  <section class="tsec">
+    <h2 class="tsec__title">Sources and scope</h2>
+    <div class="panel">
+      <ul>
+        <li>
+          <strong>Official PAC giving levels:</strong>
+          <a href="https://www.vadental.org/vda-pac" rel="noopener noreferrer">vadental.org/vda-pac</a>
+        </li>
+        <li>
+          <strong>Official PAC contributor PDF (full list):</strong>
+          <a
+            href="https://www.vadental.org/docs/statevavirginialibraries/vda-pac/pac-contributors.pdf?sfvrsn=5618550f_0"
+            rel="noopener noreferrer"
+            >pac-contributors.pdf</a
+          >
+        </li>
+        <li>
+          <strong>Our Gold/Silver subset:</strong> compiled from a donor-recognition page circulated publicly
+          (screenshot/PDF). This indicates tier recognition, not an endorsement of a specific bill.
+        </li>
+        <li><strong>Scope:</strong> we only publish <strong>Virginia</strong> practice contact information.</li>
+        <li><strong>Harassment policy:</strong> do not harass or threaten anyone. Use this information respectfully.</li>
+      </ul>
     </div>
-  </div>
+  </section>
 
-  <h2 style="margin-top: 42px;">Gold club (pending verification)</h2>
-  <div class="panel">
-    <p class="muted">These names are listed in the donor recognition list, but practice details are not yet verified.</p>
-    <ul>
-      {pendingGold.map((e) => <li><strong>{e.name}</strong>{e.notes ? <span class="muted"> — {e.notes}</span> : null}</li>)}
-    </ul>
-  </div>
+  <section class="tsec">
+    <h2 class="tsec__title">How to read donor tiers</h2>
+    <div class="panel">
+      <p class="muted" style="margin-top: 0;">
+        The donor recognition page lists donors by <strong>club/tier</strong>. This indicates a <strong>minimum contribution
+        level</strong> (or fixed level), not necessarily the exact amount given by each individual.
+      </p>
+      <ul>
+        <li>
+          <strong>{tierMeta.gold.label}:</strong> {tierMeta.gold.amountText} (minimum
+          {formatMoney(tierMeta.gold.minAmount)})
+        </li>
+        <li>
+          <strong>{tierMeta.silver.label}:</strong> {tierMeta.silver.amountText} (minimum
+          {formatMoney(tierMeta.silver.minAmount)})
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <h2 style="margin-top: 42px;">Silver club (pending verification)</h2>
-  <div class="panel">
-    <ul>
-      {pendingSilver.map((e) => <li><strong>{e.name}</strong>{e.notes ? <span class="muted"> — {e.notes}</span> : null}</li>)}
-    </ul>
-  </div>
+  <section class="tsec">
+    <h2 class="tsec__title">Verified practice information (Virginia only)</h2>
+    <div class="panel">
+      <p class="muted" style="margin-top: 0;">
+        This section includes entries where we have verified Virginia office contact details and a source link. Some
+        entries use public business listings (Yelp/NPI/directories) when a practice contact page is not easily
+        accessible.
+      </p>
 
-  <h2 style="margin-top: 42px;">What will be included for each verified entry</h2>
-  <div class="panel">
-    <ul>
-      <li>Name</li>
-      <li>Practice name</li>
-      <li>Virginia office address + phone</li>
-      <li>Donor tier</li>
-      <li>Source link(s) for practice info</li>
-    </ul>
-  </div>
+      <div class="grid tsec__cards">
+        {verified.map((e) => (
+          <article class="col-12 panel tsec__card">
+            <div class="tsec__cardHead">
+              <h3 style="margin: 0;">{e.name}</h3>
+              <div class="muted">{e.tier === 'gold' ? tierMeta.gold.label : tierMeta.silver.label}</div>
+            </div>
+
+            {e.practiceName && (
+              <div style="margin-top: 6px;">
+                <strong>{e.practiceName}</strong>
+              </div>
+            )}
+
+            <div class="muted" style="margin-top: 6px;">{fmtAddr(e)}</div>
+
+            {e.phone && (
+              <div style="margin-top: 6px;">
+                Phone: <a href={`tel:${e.phone}`}>{fmtPhone(e.phone)}</a>
+              </div>
+            )}
+
+            {e.sourceUrl && (
+              <div class="muted" style="margin-top: 6px;">
+                Source: <a href={e.sourceUrl} rel="noopener noreferrer">{e.sourceUrl}</a>
+              </div>
+            )}
+
+            {e.confidence && (
+              <div class="muted" style="margin-top: 6px;">
+                Confidence: {e.confidence}
+                {e.notes ? ` • ${e.notes}` : ''}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="tsec">
+    <h2 class="tsec__title">Gold club (pending verification)</h2>
+    <div class="panel">
+      <p class="muted">These names are listed in the donor recognition list, but practice details are not yet verified.</p>
+      <ul>
+        {pendingGold.map((e) => (
+          <li>
+            <strong>{e.name}</strong>
+            {e.notes ? <span class="muted"> — {e.notes}</span> : null}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="tsec">
+    <h2 class="tsec__title">Silver club (pending verification)</h2>
+    <div class="panel">
+      <ul>
+        {pendingSilver.map((e) => (
+          <li>
+            <strong>{e.name}</strong>
+            {e.notes ? <span class="muted"> — {e.notes}</span> : null}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="tsec">
+    <h2 class="tsec__title">What will be included for each verified entry</h2>
+    <div class="panel">
+      <ul>
+        <li>Name</li>
+        <li>Practice name</li>
+        <li>Virginia office address + phone</li>
+        <li>Donor tier</li>
+        <li>Source link(s) for practice info</li>
+      </ul>
+    </div>
+  </section>
+
+  <style>
+    /* Consistent spacing between transparency sections */
+    .tsec {
+      margin-top: 28px;
+    }
+    .tsec__title {
+      margin-top: 0;
+    }
+
+    /* Tighter spacing between verified doctor cards */
+    .tsec__cards {
+      margin-top: 12px;
+      gap: 10px;
+    }
+    .tsec__card {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .tsec__cardHead {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  </style>
 </BaseLayout>
