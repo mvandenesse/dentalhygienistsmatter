@@ -7,6 +7,16 @@ const tierMeta = tiers;
 const gold = entries.filter((e) => e.tier === 'gold');
 const silver = entries.filter((e) => e.tier === 'silver');
 
+const verified = entries.filter((e) => e.verified);
+const pendingGold = gold.filter((e) => !e.verified);
+const pendingSilver = silver.filter((e) => !e.verified);
+
+const fmtPhone = (p) => p;
+const fmtAddr = (e) => {
+  const parts = [e.address, [e.city, e.state, e.zip].filter(Boolean).join(' ')].filter(Boolean);
+  return parts.join(', ');
+};
+
 const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
 ---
 
@@ -34,28 +44,49 @@ const formatMoney = (n) => new Intl.NumberFormat(undefined, { style: 'currency',
     </ul>
   </div>
 
-  <h2>Gold club (Virginia only)</h2>
+  <h2>Verified practice information (Virginia only)</h2>
   <div class="panel">
-    <p class="muted">Practice info (address/phone) is being added with citations. Names may be corrected as we verify spelling.</p>
+    <p class="muted" style="margin-top:0;">This section includes entries where we have verified Virginia office contact details and a source link. Some entries use public business listings (Yelp/NPI/directories) when a practice contact page is not easily accessible.</p>
+
+    <div class="grid" style="margin-top: 12px;">
+      {verified.map((e) => (
+        <article class="col-12 panel" style="background: rgba(255,255,255,0.04);">
+          <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:baseline;">
+            <h3 style="margin:0;">{e.name}</h3>
+            <div class="muted">{(e.tier === 'gold' ? tierMeta.gold.label : tierMeta.silver.label)}</div>
+          </div>
+          {e.practiceName && <div style="margin-top:6px;"><strong>{e.practiceName}</strong></div>}
+          <div class="muted" style="margin-top:6px;">{fmtAddr(e)}</div>
+          {e.phone && <div style="margin-top:6px;">Phone: <a href={`tel:${e.phone}`}>{fmtPhone(e.phone)}</a></div>}
+          {e.sourceUrl && <div class="muted" style="margin-top:6px;">Source: <a href={e.sourceUrl} rel="noopener noreferrer">{e.sourceUrl}</a></div>}
+          {e.confidence && <div class="muted" style="margin-top:6px;">Confidence: {e.confidence}{e.notes ? ` • ${e.notes}` : ''}</div>}
+        </article>
+      ))}
+    </div>
+  </div>
+
+  <h2>Gold club (pending verification)</h2>
+  <div class="panel">
+    <p class="muted">These names are listed in the donor recognition list, but practice details are not yet verified.</p>
     <ul>
-      {gold.map((e) => <li><strong>{e.name}</strong></li>)}
+      {pendingGold.map((e) => <li><strong>{e.name}</strong>{e.notes ? <span class="muted"> — {e.notes}</span> : null}</li>)}
     </ul>
   </div>
 
-  <h2>Silver club (Virginia only)</h2>
+  <h2>Silver club (pending verification)</h2>
   <div class="panel">
     <ul>
-      {silver.map((e) => <li><strong>{e.name}</strong></li>)}
+      {pendingSilver.map((e) => <li><strong>{e.name}</strong>{e.notes ? <span class="muted"> — {e.notes}</span> : null}</li>)}
     </ul>
   </div>
 
-  <h2>What will be included for each entry (once verified)</h2>
+  <h2>What will be included for each verified entry</h2>
   <div class="panel">
     <ul>
       <li>Name</li>
       <li>Practice name</li>
-      <li>Office address + phone</li>
-      <li>Donor tier + minimum amount</li>
+      <li>Virginia office address + phone</li>
+      <li>Donor tier</li>
       <li>Source link(s) for practice info</li>
     </ul>
   </div>
