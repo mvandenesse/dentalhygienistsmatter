@@ -1,0 +1,1412 @@
+{
+  "generated_at_utc": "2026-02-14T17:50:43Z",
+  "source": "sb178-hb970-all-voters.json",
+  "people": [
+    {
+      "name": "L. Louise  Lucas",
+      "chamber": "Senate",
+      "district": 18,
+      "party": "Democrat",
+      "email": "senatorlucas@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7518",
+      "district_phone": "(757) 397-8209",
+      "member_id": "S19"
+    },
+    {
+      "name": "R. Creigh  Deeds",
+      "chamber": "Senate",
+      "district": 11,
+      "party": "Democrat",
+      "email": "senatordeeds@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7511",
+      "district_phone": "(434) 296-5491",
+      "member_id": "S62"
+    },
+    {
+      "name": "Mamie E.  Locke",
+      "chamber": "Senate",
+      "district": 23,
+      "party": "Democrat",
+      "email": "senatorlocke@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7523",
+      "district_phone": "(757) 825-5880",
+      "member_id": "S67"
+    },
+    {
+      "name": "Mark D.  Obenshain",
+      "chamber": "Senate",
+      "district": 2,
+      "party": "Republican",
+      "email": "senatorobenshain@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7502",
+      "district_phone": "(540) 437-1451",
+      "member_id": "S68"
+    },
+    {
+      "name": "Ryan T. McDougle",
+      "chamber": "Senate",
+      "district": 26,
+      "party": "Republican",
+      "email": "senatormcdougle@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7526",
+      "district_phone": "(804) 730-1026",
+      "member_id": "S69"
+    },
+    {
+      "name": "Richard H. Stuart",
+      "chamber": "Senate",
+      "district": 25,
+      "party": "Republican",
+      "email": "senatorstuart@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7525",
+      "district_phone": "(804) 493-8892",
+      "member_id": "S78"
+    },
+    {
+      "name": "David W. Marsden",
+      "chamber": "Senate",
+      "district": 35,
+      "party": "Democrat",
+      "email": "senatormarsden@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7535",
+      "district_phone": "(571) 249-3037",
+      "member_id": "S80"
+    },
+    {
+      "name": "William M. Stanley, Jr.",
+      "chamber": "Senate",
+      "district": null,
+      "party": null,
+      "email": "senatorstanley@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7507",
+      "district_phone": null,
+      "member_id": "S82"
+    },
+    {
+      "name": "Adam P. Ebbin",
+      "chamber": "Senate",
+      "district": 39,
+      "party": "Democrat",
+      "email": "senatorebbin@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7539",
+      "district_phone": "(571) 384-8957",
+      "member_id": "S85"
+    },
+    {
+      "name": "Barbara A. Favola",
+      "chamber": "Senate",
+      "district": 40,
+      "party": "Democrat",
+      "email": "senatorfavola@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7540",
+      "district_phone": "(703) 835-4845",
+      "member_id": "S86"
+    },
+    {
+      "name": "Bryce E. Reeves",
+      "chamber": "Senate",
+      "district": 28,
+      "party": "Republican",
+      "email": "senatorreeves@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7528",
+      "district_phone": "(540) 645-8440",
+      "member_id": "S88"
+    },
+    {
+      "name": "Bill  DeSteph",
+      "chamber": "Senate",
+      "district": null,
+      "party": null,
+      "email": "senatordesteph@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7520",
+      "district_phone": null,
+      "member_id": "S96"
+    },
+    {
+      "name": "Jeremy S.  McPike",
+      "chamber": "Senate",
+      "district": 29,
+      "party": "Democrat",
+      "email": "senatormcpike@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7529",
+      "district_phone": "(571) 316-0581",
+      "member_id": "S98"
+    },
+    {
+      "name": "Glen H.  Sturtevant, Jr.",
+      "chamber": "Senate",
+      "district": null,
+      "party": null,
+      "email": "senatorsturtevant@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7512",
+      "district_phone": null,
+      "member_id": "S99"
+    },
+    {
+      "name": "Scott A.  Surovell",
+      "chamber": "Senate",
+      "district": 34,
+      "party": "Democrat",
+      "email": "senatorsurovell@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7534",
+      "district_phone": "(571) 249-4484",
+      "member_id": "S100"
+    },
+    {
+      "name": "David R.  Suetterlein",
+      "chamber": "Senate",
+      "district": 4,
+      "party": "Republican",
+      "email": "senatorsuetterlein@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7504",
+      "district_phone": "(540) 302-8486",
+      "member_id": "S101"
+    },
+    {
+      "name": "Mark J.  Peake",
+      "chamber": "Senate",
+      "district": 8,
+      "party": "Republican",
+      "email": "senatorpeake@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7508",
+      "district_phone": "(434) 455-3392",
+      "member_id": "S105"
+    },
+    {
+      "name": "Jennifer B.  Boysko",
+      "chamber": "Senate",
+      "district": 38,
+      "party": "Democrat",
+      "email": "senatorboysko@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7538",
+      "district_phone": "(703) 437-0086",
+      "member_id": "S106"
+    },
+    {
+      "name": "Todd E.  Pillion",
+      "chamber": "Senate",
+      "district": 6,
+      "party": "Republican",
+      "email": "senatorpillion@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7506",
+      "district_phone": "(276) 220-1209",
+      "member_id": "S111"
+    },
+    {
+      "name": "T. Travis  Hackworth",
+      "chamber": "Senate",
+      "district": 5,
+      "party": "Republican",
+      "email": "senatorhackworth@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7505",
+      "district_phone": "(276) 345-9112",
+      "member_id": "S112"
+    },
+    {
+      "name": "Aaron R. Rouse",
+      "chamber": "Senate",
+      "district": 22,
+      "party": "Democrat",
+      "email": "senatorrouse@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7522",
+      "district_phone": null,
+      "member_id": "S113"
+    },
+    {
+      "name": "Lamont  Bagby",
+      "chamber": "Senate",
+      "district": 14,
+      "party": "Democrat",
+      "email": "senatorbagby@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7514",
+      "district_phone": "(804) 698-7514",
+      "member_id": "S114"
+    },
+    {
+      "name": "Lashrecse D.  Aird",
+      "chamber": "Senate",
+      "district": 13,
+      "party": "Democrat",
+      "email": "senatoraird@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7513",
+      "district_phone": "(804) 452-7076",
+      "member_id": "S115"
+    },
+    {
+      "name": "Emily M.  Jordan",
+      "chamber": "Senate",
+      "district": 17,
+      "party": "Republican",
+      "email": "senatorjordan@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7517",
+      "district_phone": "(757) 239-1213",
+      "member_id": "S116"
+    },
+    {
+      "name": "Jennifer D.  Carroll Foy",
+      "chamber": "Senate",
+      "district": null,
+      "party": null,
+      "email": "senatorcarrollfoy@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7533",
+      "district_phone": null,
+      "member_id": "S117"
+    },
+    {
+      "name": "Christie New   Craig",
+      "chamber": "Senate",
+      "district": 19,
+      "party": "Republican",
+      "email": "senatorcraig@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7519",
+      "district_phone": "(757) 204-5676",
+      "member_id": "S118"
+    },
+    {
+      "name": "J.D. &quot;Danny&quot;  Diggs",
+      "chamber": "Senate",
+      "district": 24,
+      "party": "Republican",
+      "email": "senatordiggs@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7524",
+      "district_phone": "(757) 888-7524",
+      "member_id": "S119"
+    },
+    {
+      "name": "Tara A.  Durant",
+      "chamber": "Senate",
+      "district": 27,
+      "party": "Republican",
+      "email": "senatordurant@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7527",
+      "district_phone": null,
+      "member_id": "S120"
+    },
+    {
+      "name": "Timmy  French",
+      "chamber": "Senate",
+      "district": 1,
+      "party": "Republican",
+      "email": "senatorfrench@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7501",
+      "district_phone": "(540) 325-8767",
+      "member_id": "S121"
+    },
+    {
+      "name": "Christopher T.  Head",
+      "chamber": "Senate",
+      "district": 3,
+      "party": "Republican",
+      "email": "senatorhead@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7503",
+      "district_phone": "(540) 283-2839",
+      "member_id": "S122"
+    },
+    {
+      "name": "Stella G.  Pekarsky",
+      "chamber": "Senate",
+      "district": 36,
+      "party": "Democrat",
+      "email": "senatorpekarsky@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7536",
+      "district_phone": "(571) 449-6794",
+      "member_id": "S124"
+    },
+    {
+      "name": "Russet W.  Perry",
+      "chamber": "Senate",
+      "district": 31,
+      "party": "Democrat",
+      "email": "senatorperry@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7531",
+      "district_phone": null,
+      "member_id": "S125"
+    },
+    {
+      "name": "Danica A.  Roem",
+      "chamber": "Senate",
+      "district": 30,
+      "party": "Democrat",
+      "email": "senatorroem@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7530",
+      "district_phone": null,
+      "member_id": "S126"
+    },
+    {
+      "name": "Saddam Azlan  Salim",
+      "chamber": "Senate",
+      "district": 37,
+      "party": "Democrat",
+      "email": "senatorsalim@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7537",
+      "district_phone": null,
+      "member_id": "S127"
+    },
+    {
+      "name": "Schuyler T.  VanValkenburg",
+      "chamber": "Senate",
+      "district": 16,
+      "party": "Democrat",
+      "email": "senatorvanvalkenburg@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7516",
+      "district_phone": "(804) 223-0669",
+      "member_id": "S129"
+    },
+    {
+      "name": "Angelia  Williams Graves",
+      "chamber": "Senate",
+      "district": null,
+      "party": null,
+      "email": "senatorwilliamsgraves@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7521",
+      "district_phone": null,
+      "member_id": "S130"
+    },
+    {
+      "name": "Tammy Brankley  Mulchi",
+      "chamber": "Senate",
+      "district": 9,
+      "party": "Republican",
+      "email": "senatormulchi@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7509",
+      "district_phone": "(434) 374-5129",
+      "member_id": "S131"
+    },
+    {
+      "name": "Luther H.  Cifers III",
+      "chamber": "Senate",
+      "district": null,
+      "party": null,
+      "email": "senatorcifers@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7510",
+      "district_phone": null,
+      "member_id": "S132"
+    },
+    {
+      "name": "Kannan  Srinivasan",
+      "chamber": "Senate",
+      "district": 32,
+      "party": "Democrat",
+      "email": "senatorsrinivasan@senate.virginia.gov",
+      "capitol_phone": "(804) 698-7532",
+      "district_phone": "(804) 698-7532",
+      "member_id": "S133"
+    },
+    {
+      "name": "Michael J.  Jones",
+      "chamber": "Senate",
+      "district": 15,
+      "party": "Democrat",
+      "email": "senatorjones@senate.virginia.gov",
+      "capitol_phone": null,
+      "district_phone": "(804) 698-7515",
+      "member_id": "S134"
+    },
+    {
+      "name": "Anderson, Jessica L.",
+      "chamber": "House",
+      "district": 71,
+      "party": null,
+      "email": "DelJAnderson@house.virginia.gov",
+      "capitol_phone": "(804) 698-1071",
+      "district_phone": "(757) 707-1673",
+      "member_id": "H0386"
+    },
+    {
+      "name": "Anthony, Bonita G.",
+      "chamber": "House",
+      "district": 92,
+      "party": null,
+      "email": "DelBAnthony@house.virginia.gov",
+      "capitol_phone": "(804) 698-1092",
+      "district_phone": "(757) 204-5492",
+      "member_id": "H0353"
+    },
+    {
+      "name": "Askew, Alex Q.",
+      "chamber": "House",
+      "district": 95,
+      "party": null,
+      "email": "DelAAskew@house.virginia.gov",
+      "capitol_phone": "(804) 698-1095",
+      "district_phone": "(757) 298-7163",
+      "member_id": "H0311"
+    },
+    {
+      "name": "Austin, Terry L.",
+      "chamber": "House",
+      "district": 37,
+      "party": null,
+      "email": "DelTAustin@house.virginia.gov",
+      "capitol_phone": "(804) 698-1037",
+      "district_phone": "(540) 254-1500",
+      "member_id": "H0253"
+    },
+    {
+      "name": "Ballard, Jason S.",
+      "chamber": "House",
+      "district": 42,
+      "party": null,
+      "email": "DelJBallard@house.virginia.gov",
+      "capitol_phone": "(804) 698-1042",
+      "district_phone": "(540) 787-5011",
+      "member_id": "H0333"
+    },
+    {
+      "name": "Bennett-Parker, Elizabeth B.",
+      "chamber": "House",
+      "district": 5,
+      "party": null,
+      "email": "DelEBennett-Parker@house.virginia.gov",
+      "capitol_phone": "(804) 698-1005",
+      "district_phone": "(703) 239-3155",
+      "member_id": "H0334"
+    },
+    {
+      "name": "Bloxom, Robert S., Jr.",
+      "chamber": "House",
+      "district": 100,
+      "party": null,
+      "email": "DelRBloxom@house.virginia.gov",
+      "capitol_phone": "(804) 698-1000",
+      "district_phone": "(757) 824-3456",
+      "member_id": "H0267"
+    },
+    {
+      "name": "Bulova, Gretchen M.",
+      "chamber": "House",
+      "district": 11,
+      "party": null,
+      "email": "DelGBulova@house.virginia.gov",
+      "capitol_phone": "(804) 698-1011",
+      "district_phone": "(703) 310-6752",
+      "member_id": "H0403"
+    },
+    {
+      "name": "Callsen, Katrina E.",
+      "chamber": "House",
+      "district": 54,
+      "party": null,
+      "email": "DelKCallsen@house.virginia.gov",
+      "capitol_phone": "(804) 698-1054",
+      "district_phone": "(434) 443-5400",
+      "member_id": "H0354"
+    },
+    {
+      "name": "Carnegie, Karen Robins",
+      "chamber": "House",
+      "district": 89,
+      "party": null,
+      "email": "DelKCarnegie@house.virginia.gov",
+      "capitol_phone": "(804) 698-1089",
+      "district_phone": "(757) 255-8236",
+      "member_id": "H0387"
+    },
+    {
+      "name": "Carr, Betsy B.",
+      "chamber": "House",
+      "district": 78,
+      "party": null,
+      "email": "DelBCarr@house.virginia.gov",
+      "capitol_phone": "(804) 698-1078",
+      "district_phone": "(804) 698-1078",
+      "member_id": "H0212"
+    },
+    {
+      "name": "Carroll, Stacey A.",
+      "chamber": "House",
+      "district": 64,
+      "party": null,
+      "email": "DelSCarroll@house.virginia.gov",
+      "capitol_phone": "(804) 698-1064",
+      "district_phone": "(540) 287-4699",
+      "member_id": "H0388"
+    },
+    {
+      "name": "Cherry, Mike A.",
+      "chamber": "House",
+      "district": 74,
+      "party": null,
+      "email": "DelMCherry@house.virginia.gov",
+      "capitol_phone": "(804) 698-1074",
+      "district_phone": "(804) 946-1221",
+      "member_id": "H0335"
+    },
+    {
+      "name": "Clark, Nadarius E.",
+      "chamber": "House",
+      "district": 84,
+      "party": null,
+      "email": "DelNClark@house.virginia.gov",
+      "capitol_phone": "(804) 698-1084",
+      "district_phone": "(757) 839-4758",
+      "member_id": "H0336"
+    },
+    {
+      "name": "Cohen, Laura Jane",
+      "chamber": "House",
+      "district": 15,
+      "party": null,
+      "email": "DelLJCohen@house.virginia.gov",
+      "capitol_phone": "(804) 698-1015",
+      "district_phone": "(703) 261-9171",
+      "member_id": "H0355"
+    },
+    {
+      "name": "Cole, Joshua G.",
+      "chamber": "House",
+      "district": 65,
+      "party": null,
+      "email": "DelJCole@house.virginia.gov",
+      "capitol_phone": "(804) 698-1065",
+      "district_phone": "(540) 642-0165",
+      "member_id": "H0314"
+    },
+    {
+      "name": "Cole, Nicole",
+      "chamber": "House",
+      "district": 66,
+      "party": null,
+      "email": "DelNCole@house.virginia.gov",
+      "capitol_phone": "(804) 698-1066",
+      "district_phone": "(540) 255-0993",
+      "member_id": "H0389"
+    },
+    {
+      "name": "Convirs-Fowler, Kelly K.",
+      "chamber": "House",
+      "district": 96,
+      "party": null,
+      "email": "DelKConvirs-Fowler@house.virginia.gov",
+      "capitol_phone": "(804) 698-1096",
+      "district_phone": "(757) 364-8428",
+      "member_id": "H0295"
+    },
+    {
+      "name": "Cornett, Mitchell",
+      "chamber": "House",
+      "district": 46,
+      "party": null,
+      "email": "DelMCornett@house.virginia.gov",
+      "capitol_phone": "(804) 698-1046",
+      "district_phone": "(276) 250-5968",
+      "member_id": "H0390"
+    },
+    {
+      "name": "Cousins, Rae C.",
+      "chamber": "House",
+      "district": 79,
+      "party": null,
+      "email": "DelRCousins@house.virginia.gov",
+      "capitol_phone": "(804) 698-1079",
+      "district_phone": "(804) 698-1079",
+      "member_id": "H0356"
+    },
+    {
+      "name": "Davis, Will P.",
+      "chamber": "House",
+      "district": 39,
+      "party": null,
+      "email": "DelWDavis@house.virginia.gov",
+      "capitol_phone": "(804) 698-1039",
+      "district_phone": "(540) 963-5221",
+      "member_id": "H0357"
+    },
+    {
+      "name": "Delaney, Karrie K.",
+      "chamber": "House",
+      "district": 9,
+      "party": null,
+      "email": "DelKDelaney@house.virginia.gov",
+      "capitol_phone": "(804) 698-1009",
+      "district_phone": "(703) 996-9415",
+      "member_id": "H0294"
+    },
+    {
+      "name": "Dougherty, Lindsey",
+      "chamber": "House",
+      "district": 75,
+      "party": null,
+      "email": "DelLDougherty@house.virginia.gov",
+      "capitol_phone": "(804) 698-1075",
+      "district_phone": "(804) 621-5161",
+      "member_id": "H0391"
+    },
+    {
+      "name": "Downey, Mark C.",
+      "chamber": "House",
+      "district": 69,
+      "party": null,
+      "email": "DelMDowney@house.virginia.gov",
+      "capitol_phone": "(804) 698-1069",
+      "district_phone": "(757) 912-0022",
+      "member_id": "H0392"
+    },
+    {
+      "name": "Feggans, Michael",
+      "chamber": "House",
+      "district": 97,
+      "party": null,
+      "email": "DelMFeggans@house.virginia.gov",
+      "capitol_phone": "(804) 698-1097",
+      "district_phone": "(757) 204-1524",
+      "member_id": "H0360"
+    },
+    {
+      "name": "Fowler, Hyland F., Jr.",
+      "chamber": "House",
+      "district": 59,
+      "party": null,
+      "email": "DelBFowler@house.virginia.gov",
+      "capitol_phone": "(804) 698-1059",
+      "district_phone": "(804) 227-3177",
+      "member_id": "H0259"
+    },
+    {
+      "name": "Franklin, Lily V.",
+      "chamber": "House",
+      "district": 41,
+      "party": null,
+      "email": "DelLFranklin@house.virginia.gov",
+      "capitol_phone": "(804) 698-1041",
+      "district_phone": "(540) 257-6797",
+      "member_id": "H0393"
+    },
+    {
+      "name": "Franklin, Margaret Angela",
+      "chamber": "House",
+      "district": 23,
+      "party": null,
+      "email": "DelMFranklin@house.virginia.gov",
+      "capitol_phone": "(804) 698-1023",
+      "district_phone": "(804) 698-1023",
+      "member_id": "H0404"
+    },
+    {
+      "name": "Gardner, Debra D.",
+      "chamber": "House",
+      "district": 76,
+      "party": null,
+      "email": "DelDGardner@house.virginia.gov",
+      "capitol_phone": "(804) 698-1076",
+      "district_phone": "(804) 698-1076",
+      "member_id": "H0361"
+    },
+    {
+      "name": "Garrett, Thomas A., Jr.",
+      "chamber": "House",
+      "district": 56,
+      "party": null,
+      "email": "DelTGarrett@house.virginia.gov",
+      "capitol_phone": "(804) 698-1056",
+      "district_phone": "(804) 869-4444",
+      "member_id": "H0362"
+    },
+    {
+      "name": "Glass, Jackie Hope",
+      "chamber": "House",
+      "district": 93,
+      "party": null,
+      "email": "DelJGlass@house.virginia.gov",
+      "capitol_phone": "(804) 698-1093",
+      "district_phone": "(757) 472-1293",
+      "member_id": "H0349"
+    },
+    {
+      "name": "Griffin, Timothy P.",
+      "chamber": "House",
+      "district": 53,
+      "party": null,
+      "email": "DelTGriffin@house.virginia.gov",
+      "capitol_phone": "(804) 698-1053",
+      "district_phone": "(434) 515-1752",
+      "member_id": "H0364"
+    },
+    {
+      "name": "Guzman, Elizabeth R.",
+      "chamber": "House",
+      "district": 22,
+      "party": null,
+      "email": "DelEGuzman@house.virginia.gov",
+      "capitol_phone": "(804) 698-1022",
+      "district_phone": "(804) 698-1022",
+      "member_id": "H0297"
+    },
+    {
+      "name": "Hamilton, Karen Fleming",
+      "chamber": "House",
+      "district": 62,
+      "party": null,
+      "email": "DelKHamilton@house.virginia.gov",
+      "capitol_phone": "(804) 698-1062",
+      "district_phone": "(540) 603-8653",
+      "member_id": "H0394"
+    },
+    {
+      "name": "Hayes, C. E. (Cliff), Jr.",
+      "chamber": "House",
+      "district": 91,
+      "party": null,
+      "email": "DelCHayes@house.virginia.gov",
+      "capitol_phone": "(804) 698-1091",
+      "district_phone": "(757) 364-0272",
+      "member_id": "H0285"
+    },
+    {
+      "name": "Helmer, Dan",
+      "chamber": "House",
+      "district": 10,
+      "party": null,
+      "email": "DelDHelmer@house.virginia.gov",
+      "capitol_phone": "(804) 698-1010",
+      "district_phone": "(571) 445-0251",
+      "member_id": "H0317"
+    },
+    {
+      "name": "Henson, Rozia A., Jr.",
+      "chamber": "House",
+      "district": 19,
+      "party": null,
+      "email": "DelRHenson@house.virginia.gov",
+      "capitol_phone": "(804) 698-1019",
+      "district_phone": "(804) 698-1019",
+      "member_id": "H0365"
+    },
+    {
+      "name": "Hernandez, Phil M.",
+      "chamber": "House",
+      "district": 94,
+      "party": null,
+      "email": "DelPHernandez@house.virginia.gov",
+      "capitol_phone": "(804) 698-1094",
+      "district_phone": "(804) 698-1094",
+      "member_id": "H0366"
+    },
+    {
+      "name": "Herring, Charniele L.",
+      "chamber": "House",
+      "district": 4,
+      "party": null,
+      "email": "DelCHerring@house.virginia.gov",
+      "capitol_phone": "(804) 698-1004",
+      "district_phone": "(703) 606-9705",
+      "member_id": "H0208"
+    },
+    {
+      "name": "Hodges, M. Keith",
+      "chamber": "House",
+      "district": 68,
+      "party": null,
+      "email": "DelKHodges@house.virginia.gov",
+      "capitol_phone": "(804) 698-1068",
+      "district_phone": "(804) 277-9801",
+      "member_id": "H0238"
+    },
+    {
+      "name": "Hope, Patrick A.",
+      "chamber": "House",
+      "district": 1,
+      "party": null,
+      "email": "DelPHope@house.virginia.gov",
+      "capitol_phone": "(804) 698-1001",
+      "district_phone": "(703) 486-1010",
+      "member_id": "H0219"
+    },
+    {
+      "name": "Kent, Hillary Pugh",
+      "chamber": "House",
+      "district": 67,
+      "party": null,
+      "email": "DelHKent@house.virginia.gov",
+      "capitol_phone": "(804) 698-1067",
+      "district_phone": "(804) 456-8360",
+      "member_id": "H0369"
+    },
+    {
+      "name": "Keys-Gamarra, Karen",
+      "chamber": "House",
+      "district": 7,
+      "party": null,
+      "email": "DelKKeys-Gamarra@house.virginia.gov",
+      "capitol_phone": "(804) 698-1007",
+      "district_phone": "(804) 698-1007",
+      "member_id": "H0370"
+    },
+    {
+      "name": "Kilgore, Terry G.",
+      "chamber": "House",
+      "district": 45,
+      "party": null,
+      "email": "DelTKilgore@house.virginia.gov",
+      "capitol_phone": "(804) 698-1045",
+      "district_phone": "(276) 386-7011",
+      "member_id": "H0056"
+    },
+    {
+      "name": "Knight, Barry D.",
+      "chamber": "House",
+      "district": 98,
+      "party": null,
+      "email": "DelBKnight@house.virginia.gov",
+      "capitol_phone": "(804) 698-1098",
+      "district_phone": "(757) 426-6387",
+      "member_id": "H0206"
+    },
+    {
+      "name": "Krizek, Paul E.",
+      "chamber": "House",
+      "district": 16,
+      "party": null,
+      "email": "DelPKrizek@house.virginia.gov",
+      "capitol_phone": "(804) 698-1016",
+      "district_phone": "(703) 688-2983",
+      "member_id": "H0281"
+    },
+    {
+      "name": "Laufer, Amy J.",
+      "chamber": "House",
+      "district": 55,
+      "party": null,
+      "email": "DelALaufer@house.virginia.gov",
+      "capitol_phone": "(804) 698-1055",
+      "district_phone": "(540) 251-4603",
+      "member_id": "H0371"
+    },
+    {
+      "name": "LeVere Bolling, Destiny L.",
+      "chamber": "House",
+      "district": 80,
+      "party": null,
+      "email": "DelDLeVereBolling@house.virginia.gov",
+      "capitol_phone": "(804) 698-1080",
+      "district_phone": "(804) 698-1180",
+      "member_id": "H0372"
+    },
+    {
+      "name": "Leftwich, James A. (Jay), Jr.",
+      "chamber": "House",
+      "district": 90,
+      "party": null,
+      "email": "DelJLeftwich@house.virginia.gov",
+      "capitol_phone": "(804) 698-1090",
+      "district_phone": "(757) 382-4145",
+      "member_id": "H0262"
+    },
+    {
+      "name": "Lopez, Alfonso H.",
+      "chamber": "House",
+      "district": 3,
+      "party": null,
+      "email": "DelALopez@house.virginia.gov",
+      "capitol_phone": "(804) 698-1003",
+      "district_phone": "(571) 336-2147",
+      "member_id": "H0239"
+    },
+    {
+      "name": "Maldonado, Michelle Lopes",
+      "chamber": "House",
+      "district": 20,
+      "party": null,
+      "email": "DelMMaldonado@house.virginia.gov",
+      "capitol_phone": "(804) 698-1020",
+      "district_phone": "(804) 698-1020",
+      "member_id": "H0340"
+    },
+    {
+      "name": "Martinez, Fernando J.",
+      "chamber": "House",
+      "district": 29,
+      "party": null,
+      "email": "DelMMartinez@house.virginia.gov",
+      "capitol_phone": "(804) 698-1029",
+      "district_phone": "(804) 698-1029",
+      "member_id": "H0374"
+    },
+    {
+      "name": "McAuliff, John C",
+      "chamber": "House",
+      "district": 30,
+      "party": null,
+      "email": "DelJMcAuliff@house.virginia.gov",
+      "capitol_phone": "(804) 698-1030",
+      "district_phone": "(804) 601-6512",
+      "member_id": "H0395"
+    },
+    {
+      "name": "McClure, Adele Y.",
+      "chamber": "House",
+      "district": 2,
+      "party": null,
+      "email": "DelAMcClure@house.virginia.gov",
+      "capitol_phone": "(804) 698-1002",
+      "district_phone": "(703) 239-4425",
+      "member_id": "H0375"
+    },
+    {
+      "name": "McGuire, Garrett",
+      "chamber": "House",
+      "district": 17,
+      "party": null,
+      "email": "DelGMcGuire@house.virginia.gov",
+      "capitol_phone": "(804) 698-1017",
+      "district_phone": "(804) 698-1017",
+      "member_id": "H0405"
+    },
+    {
+      "name": "McLaughlin, Ellen H.",
+      "chamber": "House",
+      "district": 36,
+      "party": null,
+      "email": "DelEMcLaughlin@house.virginia.gov",
+      "capitol_phone": "(804) 698-1036",
+      "district_phone": "(540) 280-0778",
+      "member_id": "H0350"
+    },
+    {
+      "name": "McNamara, Joseph P.",
+      "chamber": "House",
+      "district": 40,
+      "party": null,
+      "email": "DelJMcNamara@house.virginia.gov",
+      "capitol_phone": "(804) 698-1040",
+      "district_phone": "(540) 384-0276",
+      "member_id": "H0308"
+    },
+    {
+      "name": "McQuinn, Delores L.",
+      "chamber": "House",
+      "district": 81,
+      "party": null,
+      "email": "DelDMcQuinn@house.virginia.gov",
+      "capitol_phone": "(804) 698-1081",
+      "district_phone": "(804) 698-1081",
+      "member_id": "H0207"
+    },
+    {
+      "name": "Mehta, Leslie Chambers",
+      "chamber": "House",
+      "district": 73,
+      "party": null,
+      "email": "DelLMehta@house.virginia.gov",
+      "capitol_phone": "(804) 698-1073",
+      "district_phone": "(804) 637-4074",
+      "member_id": "H0396"
+    },
+    {
+      "name": "Morefield, James W. (Will)",
+      "chamber": "House",
+      "district": 43,
+      "party": null,
+      "email": "DelJMorefield@house.virginia.gov",
+      "capitol_phone": "(804) 698-1043",
+      "district_phone": "(276) 345-4300",
+      "member_id": "H0224"
+    },
+    {
+      "name": "Nivar, May",
+      "chamber": "House",
+      "district": 57,
+      "party": null,
+      "email": "DelMNivar@house.virginia.gov",
+      "capitol_phone": "(804) 698-1057",
+      "district_phone": "(804) 698-1057",
+      "member_id": "H0397"
+    },
+    {
+      "name": "O&#39;Quinn, Israel D.",
+      "chamber": "House",
+      "district": 44,
+      "party": null,
+      "email": "DeliOquinn@house.virginia.gov",
+      "capitol_phone": "(804) 698-1044",
+      "district_phone": "(276) 525-1311",
+      "member_id": "H0242"
+    },
+    {
+      "name": "Oates, Delores",
+      "chamber": "House",
+      "district": 31,
+      "party": null,
+      "email": "DelDOates@house.virginia.gov",
+      "capitol_phone": "(804) 698-1031",
+      "district_phone": "(804) 698-1031",
+      "member_id": "H0377"
+    },
+    {
+      "name": "Pence, Justin L.",
+      "chamber": "House",
+      "district": 33,
+      "party": null,
+      "email": "DelJPence@house.virginia.gov",
+      "capitol_phone": "(804) 698-1033",
+      "district_phone": "(540) 335-1033",
+      "member_id": "H0398"
+    },
+    {
+      "name": "Phillips, Eric J.",
+      "chamber": "House",
+      "district": 48,
+      "party": null,
+      "email": "DelEPhillips@house.virginia.gov",
+      "capitol_phone": "(804) 698-1048",
+      "district_phone": "(434) 326-5878",
+      "member_id": "H0384"
+    },
+    {
+      "name": "Pope Adams, Kimberly",
+      "chamber": "House",
+      "district": 82,
+      "party": null,
+      "email": "DelKPopeAdams@house.virginia.gov",
+      "capitol_phone": "(804) 698-1082",
+      "district_phone": "(804) 894-6899",
+      "member_id": "H0399"
+    },
+    {
+      "name": "Price, Marcia S. (Cia)",
+      "chamber": "House",
+      "district": 85,
+      "party": null,
+      "email": "DelMPrice@house.virginia.gov",
+      "capitol_phone": "(804) 698-1085",
+      "district_phone": "(757) 504-4605",
+      "member_id": "H0284"
+    },
+    {
+      "name": "Rasoul, Sam",
+      "chamber": "House",
+      "district": 38,
+      "party": null,
+      "email": "DelSRasoul@house.virginia.gov",
+      "capitol_phone": "(804) 698-1038",
+      "district_phone": "(540) 904-6905",
+      "member_id": "H0266"
+    },
+    {
+      "name": "Reaser, Atoosa R.",
+      "chamber": "House",
+      "district": 27,
+      "party": null,
+      "email": "DelAReaser@house.virginia.gov",
+      "capitol_phone": "(804) 698-1027",
+      "district_phone": "(703) 951-3794",
+      "member_id": "H0380"
+    },
+    {
+      "name": "Reid, David A.",
+      "chamber": "House",
+      "district": 28,
+      "party": null,
+      "email": "DelDReid@house.virginia.gov",
+      "capitol_phone": "(804) 698-1028",
+      "district_phone": "(703) 662-1395",
+      "member_id": "H0301"
+    },
+    {
+      "name": "Runion, Chris",
+      "chamber": "House",
+      "district": 35,
+      "party": null,
+      "email": "DelCRunion@house.virginia.gov",
+      "capitol_phone": "(804) 698-1035",
+      "district_phone": "(540) 255-0504",
+      "member_id": "H0321"
+    },
+    {
+      "name": "Schmidt, Charles H., Jr.",
+      "chamber": "House",
+      "district": 77,
+      "party": null,
+      "email": "DelCSchmidt@house.virginia.gov",
+      "capitol_phone": "(804) 698-1077",
+      "district_phone": "(804) 774-7277",
+      "member_id": "H0402"
+    },
+    {
+      "name": "Scott, Don",
+      "chamber": "House",
+      "district": 88,
+      "party": null,
+      "email": "DelDScott@house.virginia.gov",
+      "capitol_phone": "(804) 698-1088",
+      "district_phone": "(757) 966-7914",
+      "member_id": "H0322"
+    },
+    {
+      "name": "Scott, Phillip A.",
+      "chamber": "House",
+      "district": 63,
+      "party": null,
+      "email": "DelPScott@house.virginia.gov",
+      "capitol_phone": "(804) 698-1063",
+      "district_phone": "(540) 360-3789",
+      "member_id": "H0342"
+    },
+    {
+      "name": "Seibold, Holly M.",
+      "chamber": "House",
+      "district": 12,
+      "party": null,
+      "email": "DelHSeibold@house.virginia.gov",
+      "capitol_phone": "(804) 698-1012",
+      "district_phone": "(804) 698-1012",
+      "member_id": "H0351"
+    },
+    {
+      "name": "Sewell, Briana D.",
+      "chamber": "House",
+      "district": 25,
+      "party": null,
+      "email": "DelBSewell@house.virginia.gov",
+      "capitol_phone": "(804) 698-1025",
+      "district_phone": "(703) 261-4787",
+      "member_id": "H0343"
+    },
+    {
+      "name": "Shin, Irene",
+      "chamber": "House",
+      "district": 8,
+      "party": null,
+      "email": "DelIShin@house.virginia.gov",
+      "capitol_phone": "(804) 698-1008",
+      "district_phone": "(703) 677-8334",
+      "member_id": "H0344"
+    },
+    {
+      "name": "Simon, Marcus B.",
+      "chamber": "House",
+      "district": 13,
+      "party": null,
+      "email": "DelMSimon@house.virginia.gov",
+      "capitol_phone": "(804) 698-1013",
+      "district_phone": "(571) 327-0053",
+      "member_id": "H0264"
+    },
+    {
+      "name": "Simonds, Shelly A.",
+      "chamber": "House",
+      "district": 70,
+      "party": null,
+      "email": "DelSSimonds@house.virginia.gov",
+      "capitol_phone": "(804) 698-1070",
+      "district_phone": "(757) 276-3022",
+      "member_id": "H0323"
+    },
+    {
+      "name": "Singh, J J",
+      "chamber": "House",
+      "district": 26,
+      "party": null,
+      "email": "DelJSingh@house.virginia.gov",
+      "capitol_phone": "(804) 698-1026",
+      "district_phone": "(804) 698-1026",
+      "member_id": "H0385"
+    },
+    {
+      "name": "Sullivan, Richard C. (Rip), Jr.",
+      "chamber": "House",
+      "district": 6,
+      "party": null,
+      "email": "DelRSullivan@house.virginia.gov",
+      "capitol_phone": "(804) 698-1006",
+      "district_phone": "(571) 210-5876",
+      "member_id": "H0269"
+    },
+    {
+      "name": "Tata, Anne Ferrell H.",
+      "chamber": "House",
+      "district": 99,
+      "party": null,
+      "email": "DelAFTata@house.virginia.gov",
+      "capitol_phone": "(804) 698-1099",
+      "district_phone": "(757) 213-5193",
+      "member_id": "H0345"
+    },
+    {
+      "name": "Thomas, Josh",
+      "chamber": "House",
+      "district": 21,
+      "party": null,
+      "email": "DelJThomas@house.virginia.gov",
+      "capitol_phone": "(804) 698-1021",
+      "district_phone": "(804) 698-1021",
+      "member_id": "H0382"
+    },
+    {
+      "name": "Thornton, Virgil Gene, Sr.",
+      "chamber": "House",
+      "district": 86,
+      "party": null,
+      "email": "DelVThornton@house.virginia.gov",
+      "capitol_phone": "(804) 698-1086",
+      "district_phone": "(757) 732-1397",
+      "member_id": "H0400"
+    },
+    {
+      "name": "Torian, Luke E.",
+      "chamber": "House",
+      "district": 24,
+      "party": null,
+      "email": "DelLTorian@house.virginia.gov",
+      "capitol_phone": "(804) 698-1024",
+      "district_phone": "(703) 785-2224",
+      "member_id": "H0227"
+    },
+    {
+      "name": "Tran, Kathy KL",
+      "chamber": "House",
+      "district": 18,
+      "party": null,
+      "email": "DelKTran@house.virginia.gov",
+      "capitol_phone": "(804) 698-1018",
+      "district_phone": "(703) 539-2066",
+      "member_id": "H0305"
+    },
+    {
+      "name": "Wachsmann, Howard Otto, Jr.",
+      "chamber": "House",
+      "district": 83,
+      "party": null,
+      "email": "DelOWachsmann@house.virginia.gov",
+      "capitol_phone": "(804) 698-1083",
+      "district_phone": "(804) 469-0872",
+      "member_id": "H0347"
+    },
+    {
+      "name": "Walker, Wendell S.",
+      "chamber": "House",
+      "district": 52,
+      "party": null,
+      "email": "DelWWalker@house.virginia.gov",
+      "capitol_phone": "(804) 698-1052",
+      "district_phone": "(434) 515-2264",
+      "member_id": "H0325"
+    },
+    {
+      "name": "Ward, Jeion A.",
+      "chamber": "House",
+      "district": 87,
+      "party": null,
+      "email": "DelJWard@house.virginia.gov",
+      "capitol_phone": "(804) 698-1087",
+      "district_phone": "(757) 827-5921",
+      "member_id": "H0173"
+    },
+    {
+      "name": "Ware, R. Lee",
+      "chamber": "House",
+      "district": 72,
+      "party": null,
+      "email": "DelLWare@house.virginia.gov",
+      "capitol_phone": "(804) 698-1072",
+      "district_phone": "(804) 598-6696",
+      "member_id": "H0124"
+    },
+    {
+      "name": "Watts, Vivian E.",
+      "chamber": "House",
+      "district": 14,
+      "party": null,
+      "email": "DelVWatts@house.virginia.gov",
+      "capitol_phone": "(804) 698-1014",
+      "district_phone": "(703) 978-2989",
+      "member_id": "H0108"
+    },
+    {
+      "name": "Webert, Michael J.",
+      "chamber": "House",
+      "district": 61,
+      "party": null,
+      "email": "DelMWebert@house.virginia.gov",
+      "capitol_phone": "(804) 698-1061",
+      "district_phone": "(540) 999-8218",
+      "member_id": "H0247"
+    },
+    {
+      "name": "Whittle, Madison",
+      "chamber": "House",
+      "district": 49,
+      "party": null,
+      "email": "DelMWhittle@house.virginia.gov",
+      "capitol_phone": "(804) 698-1049",
+      "district_phone": "(434) 797-5861",
+      "member_id": "H0401"
+    },
+    {
+      "name": "Wiley, William D. (Bill)",
+      "chamber": "House",
+      "district": 32,
+      "party": null,
+      "email": "DelBWiley@house.virginia.gov",
+      "capitol_phone": "(804) 698-1032",
+      "district_phone": "(804) 698-1032",
+      "member_id": "H0329"
+    },
+    {
+      "name": "Willett, Rodney T.",
+      "chamber": "House",
+      "district": 58,
+      "party": null,
+      "email": "DelRWillett@house.virginia.gov",
+      "capitol_phone": "(804) 698-1058",
+      "district_phone": "(804) 698-1058",
+      "member_id": "H0327"
+    },
+    {
+      "name": "Williams, Wren M.",
+      "chamber": "House",
+      "district": 47,
+      "party": null,
+      "email": "DelWWilliams@house.virginia.gov",
+      "capitol_phone": "(804) 698-1047",
+      "district_phone": "(276) 200-4089",
+      "member_id": "H0348"
+    },
+    {
+      "name": "Wilt, Tony O.",
+      "chamber": "House",
+      "district": 34,
+      "party": null,
+      "email": "DelTWilt@house.virginia.gov",
+      "capitol_phone": "(804) 698-1034",
+      "district_phone": "(540) 208-0735",
+      "member_id": "H0231"
+    },
+    {
+      "name": "Wright, Thomas C., Jr.",
+      "chamber": "House",
+      "district": 50,
+      "party": null,
+      "email": "DelTWright@house.virginia.gov",
+      "capitol_phone": "(804) 698-1050",
+      "district_phone": "(434) 696-3061",
+      "member_id": "H0136"
+    },
+    {
+      "name": "Wyatt, Scott A.",
+      "chamber": "House",
+      "district": 60,
+      "party": null,
+      "email": "DelSWyatt@house.virginia.gov",
+      "capitol_phone": "(804) 698-1060",
+      "district_phone": "(804) 442-2737",
+      "member_id": "H0328"
+    },
+    {
+      "name": "Zehr, Eric",
+      "chamber": "House",
+      "district": 51,
+      "party": null,
+      "email": "DelEZehr@house.virginia.gov",
+      "capitol_phone": "(804) 698-1051",
+      "district_phone": "(434) 515-1189",
+      "member_id": "H0383"
+    }
+  ],
+  "governor": {
+    "role": "Governor of Virginia",
+    "contact_page": "https://www.virginia.gov/agencies/office-of-the-governor/",
+    "phone": "(804) 786-2211",
+    "mailing_address": "Office of the Governor, P.O. Box 1475, Richmond, VA 23218"
+  }
+}

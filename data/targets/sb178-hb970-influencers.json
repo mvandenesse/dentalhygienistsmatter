@@ -1,0 +1,271 @@
+{
+  "generated_at_utc": "2026-02-14T17:34:01Z",
+  "bills": [
+    {
+      "bill": "SB178",
+      "session": "2026 Regular (VA)"
+    },
+    {
+      "bill": "HB970",
+      "session": "2026 Regular (VA)"
+    }
+  ],
+  "scope": "Committee members and chair for Senate Education & Health (key gatekeeper committee for health scope-of-practice bills).",
+  "people": [
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S86",
+      "name": "Barbara A. Favola",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S86",
+      "email": "senatorfavola@senate.virginia.gov",
+      "capitol_office_room": "509",
+      "capitol_phone": "(804) 698-7540",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(703) 721-8582",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S86"
+      },
+      "committee_role": "chair"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S115",
+      "name": "Lashrecse D.  Aird",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S115",
+      "email": "senatoraird@senate.virginia.gov",
+      "capitol_office_room": "615",
+      "capitol_phone": "(804) 698-7513",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(804) 452-7076",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S115"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S114",
+      "name": "Lamont  Bagby",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S114",
+      "email": "senatorbagby@senate.virginia.gov",
+      "capitol_office_room": "601",
+      "capitol_phone": "(804) 698-7514",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(804) 698-7514",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S114"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S106",
+      "name": "Jennifer B.  Boysko",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S106",
+      "email": "senatorboysko@senate.virginia.gov",
+      "capitol_office_room": "613",
+      "capitol_phone": "(804) 698-7538",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(703) 437-0086",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S106"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S118",
+      "name": "Christie New   Craig",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S118",
+      "email": "senatorcraig@senate.virginia.gov",
+      "capitol_office_room": "508",
+      "capitol_phone": "(804) 698-7519",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(757) 204-5676",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S118"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S120",
+      "name": "Tara A.  Durant",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S120",
+      "email": "senatordurant@senate.virginia.gov",
+      "capitol_office_room": "505",
+      "capitol_phone": "(804) 698-7527",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": null,
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S120"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S122",
+      "name": "Christopher T.  Head",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S122",
+      "email": "senatorhead@senate.virginia.gov",
+      "capitol_office_room": "619",
+      "capitol_phone": "(804) 698-7503",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(540) 283-2839",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S122"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S67",
+      "name": "Mamie E.  Locke",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S67",
+      "email": "senatorlocke@senate.virginia.gov",
+      "capitol_office_room": "1407",
+      "capitol_phone": "(804) 698-7523",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(757) 825-5880",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S67"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S19",
+      "name": "L. Louise  Lucas",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S19",
+      "email": "senatorlucas@senate.virginia.gov",
+      "capitol_office_room": "1404",
+      "capitol_phone": "(804) 698-7518",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(757) 397-8209",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S19"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S105",
+      "name": "Mark J.  Peake",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S105",
+      "email": "senatorpeake@senate.virginia.gov",
+      "capitol_office_room": "605",
+      "capitol_phone": "(804) 698-7508",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(434) 455-3392",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S105"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S124",
+      "name": "Stella G.  Pekarsky",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S124",
+      "email": "senatorpekarsky@senate.virginia.gov",
+      "capitol_office_room": "621",
+      "capitol_phone": "(804) 698-7536",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(571) 249-5907",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S124"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S125",
+      "name": "Russet W.  Perry",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S125",
+      "email": "senatorperry@senate.virginia.gov",
+      "capitol_office_room": "506",
+      "capitol_phone": "(804) 698-7531",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": null,
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S125"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S111",
+      "name": "Todd E.  Pillion",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S111",
+      "email": "senatorpillion@senate.virginia.gov",
+      "capitol_office_room": "513",
+      "capitol_phone": "(804) 698-7506",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(276) 220-1209",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S111"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S101",
+      "name": "David R.  Suetterlein",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S101",
+      "email": "senatorsuetterlein@senate.virginia.gov",
+      "capitol_office_room": "606",
+      "capitol_phone": "(804) 698-7504",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(540) 302-8486",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S101"
+      },
+      "committee_role": "member"
+    },
+    {
+      "chamber": "Senate",
+      "committee": "Senate Education & Health (S04)",
+      "member_id": "S129",
+      "name": "Schuyler T.  VanValkenburg",
+      "member_page": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S129",
+      "email": "senatorvanvalkenburg@senate.virginia.gov",
+      "capitol_office_room": "602",
+      "capitol_phone": "(804) 698-7516",
+      "capitol_fax": "(804) 698-7651",
+      "district_phone": "(804) 223-0669",
+      "sources": {
+        "committee_membership": "https://www.vpap.org/general-assembly/standing-committees/senate-education-health/",
+        "contact": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S129"
+      },
+      "committee_role": "member"
+    }
+  ]
+}
