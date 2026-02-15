@@ -4,7 +4,7 @@ date: 2026-02-14T18:44:55Z
 author: "Missy V."
 tags: ["patient-safety", "standards-of-care", "oral-pathology"]
 published: true
-featured: false
+featured: true
 ---
 
 I speak not only as a dental professional but as someone whose patients and livelihood would be directly affected by this legislation.
