@@ -36,12 +36,48 @@ function safeTextToMarkdown(input) {
   return clipped;
 }
 
+function formatAuthorName(input) {
+  const raw = (input ?? '').toString().trim();
+  if (!raw) return undefined;
+
+  // If it's an email address, derive a readable name from the local part.
+  // e.g. jane.doe+tag@gmail.com -> jane doe
+  const emailLike = raw.includes('@') && !raw.includes(' ');
+  const nameish = emailLike
+    ? raw
+        .split('@')[0]
+        .replace(/\+.*/, '')
+        .replace(/[._-]+/g, ' ')
+    : raw;
+
+  // Remove surrounding quotes and collapse whitespace.
+  const cleaned = nameish
+    .replace(/^"+|"+$/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  // Handle "Last, First" → "First Last"
+  const comma = cleaned.match(/^([^,]+),\s*(.+)$/);
+  const normalized = comma ? `${comma[2]} ${comma[1]}` : cleaned;
+
+  const parts = normalized.split(' ').filter(Boolean);
+  if (parts.length === 0) return undefined;
+  if (parts.length === 1) return parts[0];
+
+  const first = parts[0];
+  const last = parts[parts.length - 1];
+  const initial = last[0]?.toUpperCase();
+  if (!initial) return first;
+
+  return `${first} ${initial}.`;
+}
+
 function pickAuthor(parsed) {
   // Prefer display name from From: header; fallback to email address.
   const from = parsed?.from?.value?.[0];
   if (!from) return undefined;
-  if (from.name && from.name.trim()) return from.name.trim();
-  if (from.address) return from.address;
+  if (from.name && from.name.trim()) return formatAuthorName(from.name);
+  if (from.address) return formatAuthorName(from.address);
   return undefined;
 }
 
